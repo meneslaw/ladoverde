@@ -26,7 +26,8 @@ function escreve(){
         var span = document.getElementById('digitaServicos');
         setTimeout(() => { document.getElementById('digitaServicos').innerHTML +=letras; }, i * 100);
     }
-    //chamaMaquina();
+    palavra = document.querySelector('#digitaServicos').innerHTML = "CONSULTORIA AMBIENTAL";
+    chamaMaquina();
 }
 let interval = 10000;
 function chamaMaquina() {
