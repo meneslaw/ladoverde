@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+li{list-style-type: none;}
+body {
+  
+  width: 100%;
+  height: 100%;
+  background-size: 100% 150px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, rgba(40, 82, 1, 0.315), #02550dad);
+  background: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121ec0);
+  background-color: #06121e;
+  
+}
+@import "partials/colors";
+@import "partials/contents";
+@import "partials/layout";
+@import "partials/footer";
+@import "partials/header";
+.container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  grid-template-areas:
+    "headers headers"
+    "main main"
+    "footer footer";
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 150px 40% 45px;
+  color: $white-normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: .1rem;
+  font-size: 96%;
+}
+@media screen and (max-width: 550px) {
+  section{
+    transition: 4s ease-in-out;
+    justify-content: center;
+  }
+  .o-aside{
+    display: none;
+  }
+  .aside{
+    margin-left: 10%;
+  }
+  .aside h3{
+    font-size: 70px;
+  }
+  .header-logo{
+    margin-left: 7%;
+  }
+  .opt-mob{
+    display: flex;
+  }
+  .header-rigth, .header-left{
+    display: none;
+  }
+}
+@media screen and (max-width: 879px) {
+  section{
+    justify-content: center;
+  }
+  .o-header,
+  .bg-home {
+    height: 70px;
+  }
+  body {
+    background-size: 100% 70px;
+  }
+  .header-left img {
+    width: 70px;
+  }
+
+  .container {
+    transition: .9s ease-in-out;
+    grid-template-areas:
+      "headers"
+      "main"
+      "footer";
+      grid-template-rows: 70px 75% 45px;
+      grid-template-columns: auto;
+  }
+}
+
+.o-header {
+  grid-area: headers;
+}
+
+
+.o-main {
+  grid-area: main;
+}
+
+.o-footer {
+  grid-area: footer;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e),
+    url("./assets/images/meioambiente.jpg");
+}
+
+

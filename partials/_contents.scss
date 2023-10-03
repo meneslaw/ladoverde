@@ -1,0 +1,85 @@
+section {
+  
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;  
+}
+
+section p {
+  padding: 5px;
+}
+aside{
+  display: flex;
+
+}
+aside .aside-items-logo{
+  min-width: 310px;
+}
+.aside span, .opt-mob > .aside-items-logo span {
+  color: $green-light;
+  font-size: 11px;
+  font-weight: 600;
+  border-left: 10px solid $green-light;
+  padding-left: 10px;
+}
+.aside p {
+  font-size: 13px;
+}
+.aside {
+  display: flex;
+  width: 100%;
+  height: 115px;
+  margin-left: 20px;
+}
+.aside > .aside-items-logo h1 {
+  font-family: "Dancing Script";
+  font-size: 80px;
+  color: $green-normal;
+
+}
+.servicosResumidos{
+    display: inline-flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 200px;
+    max-height: 325px;
+    align-items: center;
+    border: 1px solid gold;
+    border-radius: 7px;
+    margin: 5px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+.servicosResumidos span{
+    border-left: 5px solid goldenrod;
+    padding-left: 10px;
+    margin: 10px;
+    margin-left: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.span-servicos{
+  height: 50px;
+  width: 100%;
+  display: flex;
+}
+.servicosResumidos p{
+    font-size: 11px;
+}
+.servicosResumidos img{
+    width: 198px;
+    height: 100px;
+    
+}
+.resumidos-txt > ul > li{
+  font-size: 66%;
+  padding: 4px;
+}
+.contents {
+  position: relative;
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 60px;
+  border: 19px solid rgb(110, 0, 0);
+}
