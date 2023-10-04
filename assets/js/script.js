@@ -17,26 +17,33 @@ function openServices(){
         dlay += 10;
     }
 }
-function escreve(){
-    const palavra = document.querySelector('#digitaServicos').textContent;
-    const palavraNew = palavra;
-    document.querySelector('#digitaServicos').innerHTML="";
+let interval = 20000;
+function escreve(arg, argSeletor){
+    var palavraNew = arg;
+    var seletor = argSeletor;
+    document.getElementById(seletor).innerHTML = '';
     for(var i=0; i < palavraNew.length; i++){
         const letras = palavraNew[i].split();
-        var span = document.getElementById('digitaServicos');
-        setTimeout(() => { document.getElementById('digitaServicos').innerHTML +=letras; }, i * 100);
+        var span = document.getElementById(seletor);
+        setTimeout(() => { document.getElementById(seletor).innerHTML +=letras; }, i * 100);
     }
-    palavra = document.querySelector('#digitaServicos').innerHTML = "CONSULTORIA AMBIENTAL";
-    chamaMaquina();
+    document.getElementById(seletor).innerHTML ='';
+    
+    setTimeout(() => { escreve(palavraNew, seletor) }, 1 * interval);
+    
+   
+    
 }
-let interval = 10000;
+
 function chamaMaquina() {
+    
     setInterval(() => {
         // troca de image
-        escreve()
-    }, interval)
+        escreve("CONSULTORIA AMBIENTAL", "spanHidenShow")
+    },interval)
 }
-window.addEventListener("load", escreve);
+window.addEventListener("load", escreve("CONSULTORIA AMBIENTAL", "digitaServicos"));
+window.addEventListener("load", escreve("CONSULTORIA AMBIENTAL", "spanHidenShow"));
 window.addEventListener("load", openServices);
 
 let time = 5000,

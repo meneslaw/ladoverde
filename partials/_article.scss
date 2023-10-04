@@ -1,0 +1,112 @@
+article{
+    
+    border-radius: 0px;
+    height: 350px;
+    width: 100%;
+    background-image: url("/assets/images/card.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contact-form{
+    margin-top: 40px;
+    border-radius: 0px;
+    height: 390px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(40, 82, 1, 0.315), #02550dad);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+section article .resumidos-txt{
+    width: 50%;
+    height: 390px;
+}
+section article .contactConsultora{
+    width: 50%;
+    height: 390px;
+}
+.contactConsultora img{
+    border: 5px solid $primary-normal;
+    border-radius: 50%;
+    max-width: 300px;
+    height: 300px;
+}
+.contactForm{
+    display: flex;
+    background-image: url("/assets/images/handshake-4002834_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121ec0);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 390px;
+    margin: 5px;
+}
+.resumidos-txt input{
+    height: 40px;
+    width: 80%;
+    outline: 0;
+    border: 0;
+    border-radius: 3px;
+    padding: 4px;
+    margin-bottom: 5px;
+}
+.resumidos-txt textarea{
+    height: 155px;
+    width: 80%;
+}
+.info-items{
+    display: flex;
+    border:0;
+    border-radius: 0px;
+    background: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121ec0);
+    text-align: center;
+    width: 100%;
+    min-height: 350px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+section .contact-form .button{
+    font-size: 13px;
+    padding: 8px;
+}
+article .button{
+    padding: 14px;
+    border: 1px solid $white-normal;
+    font-size: 15px;
+    border-radius: 15px;
+    background-color: $green-dark;
+    transition: .8s ease-in;
+}
+article .button:hover{
+    cursor:pointer;
+    background-color: transparent;
+    opacity: 0.5;
+
+}
+
+article > .info-items > .span-servicos span{
+    text-align: center;
+    font-size: 24px;
+    border:0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+article > .info-items > .resumidos-txt p{
+    padding: 3px;
+    margin: 10px 0px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.important{
+    font-weight: 600;
+    padding: 0;
+    color: $green-light;
+}

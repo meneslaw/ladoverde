@@ -21,14 +21,16 @@
 }
 .opt-mob .aside-items-logo span {
   color: $primary-light;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   border-left: 10px solid $primary-light;
   
 }
 .opt-mob > .aside-items-logo h1{
   color: $primary-normal;
-  font-size: 110%;
+  font-size: 2.5rem;
+  margin-left: -3px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .opt-mob img{
   width: 65px;
