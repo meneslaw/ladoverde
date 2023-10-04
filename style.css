@@ -400,7 +400,6 @@ section article .contactConsultora {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), rgba(6, 18, 30, 0.7529411765));
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -417,6 +416,7 @@ section article .contactConsultora {
   border-radius: 3px;
   padding: 4px;
   margin-bottom: 5px;
+  padding: 4px;
 }
 
 .resumidos-txt textarea {
