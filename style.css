@@ -360,7 +360,7 @@ article {
   border-radius: 0px;
   height: 350px;
   width: 100%;
-  background-image: url("/assets/images/card.jpg");
+  background-image: url("./assets/images/card.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -396,7 +396,7 @@ section article .contactConsultora {
 
 .contactForm {
   display: flex;
-  background-image: url("/assets/images/handshake-4002834_1280.jpg");
+  background-image: url("./assets/images/handshake-4002834_1280.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
