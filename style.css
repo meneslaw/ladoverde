@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 * {
   padding: 0;
   margin: 0;
@@ -21,7 +22,6 @@ body {
 
 section {
   justify-content: center;
-  padding: 10px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -122,6 +122,46 @@ aside .aside-items-logo {
     border: 1px solid;
   }
 }
+a {
+  text-decoration: none;
+  color: rgb(92, 226, 92);
+  font-weight: 600;
+}
+
+article {
+  position: relative;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+}
+
+#item-this {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: end;
+  width: 100%;
+  height: 100%;
+  background-color: #9ffaa3;
+  opacity: 0.9;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#itema-this:not(:target), #itema-this:not(:hover) {
+  overflow: hidden;
+}
+
+#itema-this:hover {
+  overflow: visible;
+  opacity: 1;
+}
+
+#item-this:target {
+  opacity: 1;
+  overflow: visible;
+}
+
 .footer {
   width: 100%;
   height: 390px;
@@ -198,8 +238,67 @@ footer {
   background-color: #9ffaa3;
   align-items: center;
   justify-content: space-around;
-  flex-direction: row-reverse;
+  flex-direction: row;
   z-index: 1;
+}
+
+.listMob {
+  border: 0;
+  opacity: 0.7;
+}
+
+#navInicio > div > div.item-this > img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.imgListMob {
+  height: 100%;
+  min-width: 65px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: transparent;
+  background-size: 100% 70px;
+  width: 100%;
+}
+
+.imgListMob img:hover, .imgListMob div.dv:hover {
+  cursor: pointer;
+}
+
+.imgListMob:hover {
+  transition: 1.52s ease-out;
+  height: 100%;
+  background-color: #0c2135;
+  background-image: linear-gradient(to bottom, #9efaa3, #9efaa3);
+  background-size: 100% 70px;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.item-this p {
+  color: #9ffaa3;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.bi {
+  margin-right: 45px;
+  margin-left: 20px;
+}
+
+.dv {
+  width: 100%;
+  height: 65px;
+  padding: 15px 0;
+  text-align: left;
+  background-color: #0c2135;
+}
+
+.dv:hover {
+  background-color: #06121e;
 }
 
 .opt-mob .aside-items-logo span {
@@ -217,7 +316,7 @@ footer {
 }
 
 .opt-mob img {
-  width: 65px;
+  width: 67px;
   position: relative;
 }
 
@@ -371,7 +470,6 @@ article {
   border-radius: 0px;
   height: 390px;
   width: 100%;
-  background-image: linear-gradient(to bottom, rgba(40, 82, 1, 0.315), rgba(2, 85, 13, 0.6784313725));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -394,7 +492,7 @@ section article .contactConsultora {
   height: 300px;
 }
 
-.contactForm {
+section > article > .contactForm {
   display: flex;
   background-image: url("./assets/images/handshake-4002834_1280.jpg");
   background-size: cover;
@@ -404,8 +502,6 @@ section article .contactConsultora {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 390px;
-  margin: 5px;
 }
 
 .resumidos-txt input {
@@ -437,9 +533,35 @@ section article .contactConsultora {
   justify-content: center;
 }
 
-section .contact-form .button {
-  font-size: 13px;
-  padding: 8px;
+section .contact-form button {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  color: #edeaef;
+}
+
+section .contact-form input, section .contact-form textarea {
+  background-color: #011d07;
+  color: #9ffaa3;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  border: 0;
+  resize: none;
+  border-radius: 8px;
+  padding: 10px;
+  letter-spacing: 0.1rem;
+  border-left: 10px solid transparent;
+}
+
+section .contact-form textarea {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+section .contact-form input:focus, section .contact-form textarea:focus {
+  border-left: 10px solid gold;
+  background-color: #06121e;
 }
 
 article .button {
@@ -455,6 +577,10 @@ article .button:hover {
   cursor: pointer;
   background-color: transparent;
   opacity: 0.5;
+}
+
+article a {
+  color: #fff;
 }
 
 article > .info-items > .span-servicos span {
@@ -473,10 +599,11 @@ article > .info-items > .resumidos-txt p {
   font-weight: 500;
 }
 
-.important {
+.important, .important a {
   font-weight: 600;
   padding: 0;
   color: #9ffaa3;
+  text-decoration: none;
 }
 
 .container {
@@ -513,7 +640,7 @@ article > .info-items > .resumidos-txt p {
   .opt-mob {
     display: flex;
     align-items: self-start;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
   .header-rigth, .header-left {
     display: none;

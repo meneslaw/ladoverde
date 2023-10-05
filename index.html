@@ -10,32 +10,62 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Lado Verde - Consultoria Ambiental</title>
   </head>
   <body>
-
-    <div class="container">
+    <div id="navInicio" class="container">
       <div class="opt-mob">
-        <img src="assets/images/logo300x300-dark.png" alt="">
+        <span class="imgNavHidden" style="text-align: left"
+          ><a href="index.html"><img src="assets/images/logo300x300-dark.png" alt=""
+        /></a></span>
         <div class="aside-items-logo">
-        <h1>Lado Verde</h1>
-        <span id="spanHidenShow"></span>
-      </div>
+          <h1>Lado Verde</h1>
+          <span id="spanHidenShow"></span>
+        </div>
+        <div id="item-this" class="item-this close">
+          <div class="imgListMob">
+            <a href="#item-this"><img class="listMob" src="assets/images/list.svg" alt="" /></a>
+
+            <div class="dv"><p>item 1</p></div>
+            <div class="dv"><p>item 2</p></div>
+            <div class="dv"><span><i class="bi bi-envelope-at-fill"></i> <a href="#navContato">CONTATO</a></span></div>
+            <div class="dv"><a href="#">FECHAR</a></div>
+          </div>
+        </div>
       </div>
       <header class="o-header">
         <div class="bg-home">
           <div class="header-left">
+            <div class="header-logo" id="slider">
+              <img
+                class="header-logo-site selected"
+                src="assets/images/logo300x300-silver.png"
+                alt=""
+              />
+              <img
+                class="header-logo-site"
+                src="assets/images/logo300x300-silver-1.png"
+                alt=""
+              />
+              <img
+                class="header-logo-site"
+                src="assets/images/logo300x300-silver-2.png"
+                alt=""
+              />
+              <img
+                class="header-logo-site"
+                src="assets/images/logo300x300-silver-3.png"
+                alt=""
+              />
+            </div>
+          </div>
 
-            <div class="header-logo"  id="slider">
-              <img class="header-logo-site selected" src="assets/images/logo300x300-silver.png" alt="">
-              <img class="header-logo-site" src="assets/images/logo300x300-silver-1.png" alt="">
-              <img class="header-logo-site" src="assets/images/logo300x300-silver-2.png" alt="">
-              <img class="header-logo-site" src="assets/images/logo300x300-silver-3.png" alt="">
-          </div>
-          </div>
-          
           <div class="header-rigth">
             <div class="header-button">TESTE</div>
             <div class="header-button">TESTEE</div>
@@ -45,77 +75,85 @@
       </header>
 
       <main class="o-main">
-        
-          <aside class="o-aside">
-            <div class="aside">
-              <div class="aside-items-logo">
-                <h1 id="digitarLogo">Lado Verde</h1>
-                <span id="digitaServicos"></span>
-              </div>
+        <aside class="o-aside">
+          <div class="aside">
+            <div class="aside-items-logo">
+              <h1 id="digitarLogo">Lado Verde</h1>
+              <span id="digitaServicos"></span>
             </div>
-          </aside>
-          <article>
-            <div class="servicosResumidos info-items">
-              <div class="span-servicos"><span>DEIXA COM A NOSSA EQUIPE!!!</span></div>
+          </div>
+        </aside>
+        <article>
+          <div class="servicosResumidos info-items">
+            <div class="span-servicos">
+              <span>DEIXA COM A NOSSA EQUIPE!!!</span>
+            </div>
 
-              <div class="resumidos-txt">
-                <p>
-                  A <b class="important">Lado Verde</b> desempenha atividades de consultoria e assessoria  ambiental.
-              </p>
-          
-              <br/>
-              
+            <div class="resumidos-txt">
               <p>
-                  Como <b class="important">facilitadora</b>  entre o cliente e os órgãos ambientais, analisamos todas as etapas das atividades empresariais, buscando a redução de custos sócio-ambientais e gerando melhores resultados para o <b class="important">empreendimento</b>.
-              </p><br>
-              <b class="button">FALE JÁ COM A NOSSA CONSULTORIA</b>
-              </div>
-            </div>
-          </article>
-          <section>
+                A <b class="important">Lado Verde</b> desempenha atividades de
+                consultoria e assessoria ambiental.
+              </p>
 
-            <div class="servicosResumidos residuos">
-              <div class="span-servicos"><span>Gestão de Resíduos</span></div>
-              <div class="resumidos-img">
-                <img src="assets/images/residuos.jpg" alt="" />
-              </div>
-              <div class="resumidos-txt">
-                <ul>
-                  <li class="itens-servicos">
-                    PGRS- Plano de Gerenciamento de Resíduos Sólidos
-                  </li>
-                  <li class="itens-servicos">
-                    PGRSCC- Plano de Gerenciamento de Resíduos Sólidos da
-                    Construção Civil
-                  </li>
-                  <li class="itens-servicos">
-                    PGRSS- Plano de Gerenciamento de Resíduos do Serviço de Saúde
-                  </li>
-                </ul>
-              </div>
+              <br />
+
+              <p>
+                Como <b class="important">facilitadora</b> entre o cliente e os
+                órgãos ambientais, analisamos todas as etapas das atividades
+                empresariais, buscando a redução de custos sócio-ambientais e
+                gerando melhores resultados para o
+                <b class="important">empreendimento</b>.
+              </p>
+              <br />
+              <a href="#navContato"
+                ><b class="button">FALE JÁ COM A NOSSA CONSULTORIA</b></a
+              >
             </div>
-            <div class="servicosResumidos ibama">
-              <div class="span-servicos"><span>Serviços IBAMA</span></div>
-              <div class="resumidos-img">
-                <img src="assets/images/ibama.jpg" alt="" />
-              </div>
-              <div class="resumidos-txt">
-                <ul>
-                  <li class="itens-servicos">
-                    PGRS- Plano de Gerenciamento de Resíduos Sólidos
-                  </li>
-                  <li class="itens-servicos">
-                    RAPP- Relatório de Atividades Potencialmente Poluidoras e
-                    Utilizadoras de Recursos Ambientais
-                  </li>
-                  <li class="itens-servicos">
-                    CTF/APP- Cadastro Técnico Federal
-                  </li>
-                </ul>
-              </div>
+          </div>
+        </article>
+        <section>
+          <div class="servicosResumidos residuos">
+            <div class="span-servicos"><span>Gestão de Resíduos</span></div>
+            <div class="resumidos-img">
+              <img src="assets/images/residuos.jpg" alt="" />
             </div>
-          
-            <div class="servicosResumidos outorga">
+            <div class="resumidos-txt">
+              <ul>
+                <li class="itens-servicos">
+                  PGRS- Plano de Gerenciamento de Resíduos Sólidos
+                </li>
+                <li class="itens-servicos">
+                  PGRSCC- Plano de Gerenciamento de Resíduos Sólidos da
+                  Construção Civil
+                </li>
+                <li class="itens-servicos">
+                  PGRSS- Plano de Gerenciamento de Resíduos do Serviço de Saúde
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="servicosResumidos ibama">
+            <div class="span-servicos"><span>Serviços IBAMA</span></div>
+            <div class="resumidos-img">
+              <img src="assets/images/ibama.jpg" alt="" />
+            </div>
+            <div class="resumidos-txt">
+              <ul>
+                <li class="itens-servicos">
+                  PGRS- Plano de Gerenciamento de Resíduos Sólidos
+                </li>
+                <li class="itens-servicos">
+                  RAPP- Relatório de Atividades Potencialmente Poluidoras e
+                  Utilizadoras de Recursos Ambientais
+                </li>
+                <li class="itens-servicos">
+                  CTF/APP- Cadastro Técnico Federal
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="servicosResumidos outorga">
             <div class="span-servicos"><span>Outorga</span></div>
             <div class="resumidos-img">
               <img src="assets/images/recursos_hidricos.jpg" alt="" />
@@ -172,38 +210,71 @@
               </ul>
             </div>
           </div>
-          <article class="contact-form">
+          <article id="navContato" class="contact-form">
             <div class="contactForm">
-              
               <div class="resumidos-txt">
-                <form action="" method="post">
-                  <div style="text-align: center;margin: 8px;">Preencha Todos os Campos</div>
-                  <div class="formail">
-                    <input type="text" placeholder="Nome" id="nameContact" class="form-contact-items">
+                <form id="formItems" autocomplete="off">
+                  <div class="important" style="text-align: center; margin: 8px;">
+                    Preencha Todos os Campos
                   </div>
                   <div class="formail">
-                    <input type="email" placeholder="Email" id="emailContact" class="form-contact-items">
+                    <input
+                      type="text" name="3 Nome" required autocomplete="off"
+                      placeholder="Nome"
+                      id="nameContact"
+                      class="form-contact-items"
+                      onfocusout="focusOutForm('nameContact','3')"
+                    />
                   </div>
                   <div class="formail">
-                    <input type="text" placeholder="Assunto" id="sucjectContact" class="form-contact-items">
+                    <input
+                      type="email" name="5 Email" required autocomplete="off"
+                      placeholder="Email"
+                      id="emailContact"
+                      class="form-contact-items"
+                      onfocusout="emailFormRegex('emailContact')"
+                    />
                   </div>
                   <div class="formail">
-                    <textarea placeholder="Mensagem" id="messageContact" class="form-contact-items"></textarea>
+                    <input
+                      type="text" name="5 Assunto" required autocomplete="off"
+                      placeholder="Assunto"
+                      id="subjectContact"
+                      class="form-contact-items"
+                      onfocusout="focusOutForm('subjectContact','5')"
+                    />
                   </div>
+                  <div class="formail">
+                    <textarea required name="10 Mensagem"
+                      placeholder="Mensagem"
+                      id="messageContact"
+                      class="form-contact-items"
+                      onfocusout="focusOutForm('messageContact','10')"
+                    ></textarea>
+                  </div>
+                  <button class="button" title="Enviar Formulário" alt="Enviar Formulário">Enviar Formulário</button>
                 </form>
-              <br>
-              <b class="button">FALE JÁ COM A NOSSA CONSULTORIA</b>
+                <br />
+                
               </div>
               <div class="contactConsultora">
-                <img src="assets/images/debora_valias.jpg" alt="">
-                <h2>Olá!</h2>
-                <p>Eu me chama <b class="important">Débora</b> e vou tirar todas as suas dúvidas!</p>
+                <img src="assets/images/debora_valias.jpg" alt="" />
+                <h2>Olá!</h2><h3 id="clientForm"></h3>
+                <p>
+                  Eu me chama <b class="important">Débora</b> e vou tirar todas
+                  as suas dúvidas!
+                </p>
+                <span id="errorsSpan"></span>
+
               </div>
             </div>
           </article>
         </section>
       </main>
-      <footer class="o-footer">Lado Verde | Consultoria Ambiental | 2023</footer>
+      <footer class="o-footer">
+        <b class="important"><a href="#navInicio">Lado Verde</a></b> |
+        Consultoria Ambiental | 2023
+      </footer>
     </div>
     <script src="assets/js/script.js"></script>
   </body>

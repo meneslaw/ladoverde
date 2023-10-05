@@ -56,9 +56,9 @@ body {
     margin-left: 7%;
   }
   .opt-mob{
-    display: flex;
-    align-items: self-start;
-    justify-content: space-around;
+display: flex;
+align-items: self-start;
+justify-content: flex-start;
   }
   .header-rigth, .header-left{
     display: none;
