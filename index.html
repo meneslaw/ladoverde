@@ -1,281 +1,295 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="shortcut icon"
-      href="assets/images/favicon.ico"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Lado Verde - Consultoria Ambiental</title>
-  </head>
-  <body>
-    <div id="navInicio" class="container">
-      <div class="opt-mob">
-        <span class="imgNavHidden" style="text-align: left"
-          ><a href="index.html"><img src="assets/images/logo300x300-dark.png" alt=""
-        /></a></span>
-        <div class="aside-items-logo">
-          <h1>Lado Verde</h1>
-          <span id="spanHidenShow"></span>
-        </div>
-        <div id="item-this" class="item-this close">
-          <div class="imgListMob">
-            <a href="#item-this"><img class="listMob" src="assets/images/list.svg" alt="" /></a>
 
-            <div class="dv"><p>item 1</p></div>
-            <div class="dv"><p>item 2</p></div>
-            <div class="dv"><span><i class="bi bi-envelope-at-fill"></i> <a href="#navContato">CONTATO</a></span></div>
-            <div class="dv"><a href="#">FECHAR</a></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Lado Verde - Consultoria Ambiental</title>
+</head>
+
+<body>
+  <div id="navInicio" class="container">
+    <div class="opt-mob">
+      <span class="imgNavHidden" style="text-align: left"><a href="index.html"><img
+            src="assets/images/logo300x300-dark.png" alt="" /></a></span>
+      <div class="aside-items-logo">
+        <h1>Lado Verde</h1>
+        <span id="spanHidenShow"><noscript>CONSULTORIA AMBIENTAL</noscript></span>
+      </div>
+      <div id="item-this" class="item-this close">
+        <div class="imgListMob">
+          <span id="openclose">
+            <a onclick="changeIcon('openclose')" class="open" href="#item-this"><img onmouseover="opencloseHover()"
+                class="listMob" src="assets/images/list.svg" alt="" /></a>
+          </span>
+
+          <div class="dv">
+            <div class="dv-children-icon">
+              <i class="bi bi-file-earmark-diff-fill"></i>
+            </div>
+            <div class="dv-children-link">
+              <a href="#">QUEM SOMOS</a>
+            </div>
+          </div>
+          <div class="dv">
+            <div class="dv-children-icon">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <div class="dv-children-link">
+              <a href="#navServicos">SERVIÇOS</a>
+            </div>
+          </div>
+          <div class="dv">
+            <div class="dv-children-icon">
+              <i class="bi bi-envelope-at-fill"></i>
+            </div>
+            <div class="dv-children-link">
+              <a href="#navContato">CONTATO</a>
+            </div>
+          </div>
+          <div onclick="changeIcon('openclose')" class="dv">
+            <div class="dv-children-icon">
+              <i class="bi bi-x-square-fill" style="color: Tomato"></i></a>
+            </div>
+            <div class="dv-children-link">
+              FECHAR
+            </div>
           </div>
         </div>
       </div>
-      <header class="o-header">
-        <div class="bg-home">
-          <div class="header-left">
-            <div class="header-logo" id="slider">
-              <img
-                class="header-logo-site selected"
-                src="assets/images/logo300x300-silver.png"
-                alt=""
-              />
-              <img
-                class="header-logo-site"
-                src="assets/images/logo300x300-silver-1.png"
-                alt=""
-              />
-              <img
-                class="header-logo-site"
-                src="assets/images/logo300x300-silver-2.png"
-                alt=""
-              />
-              <img
-                class="header-logo-site"
-                src="assets/images/logo300x300-silver-3.png"
-                alt=""
-              />
-            </div>
-          </div>
-
-          <div class="header-rigth">
-            <div class="header-button">TESTE</div>
-            <div class="header-button">TESTEE</div>
-            <div class="header-button">TESTEEE</div>
+    </div>
+    <header class="o-header">
+      <div class="bg-home">
+        <div class="header-left">
+          <div title="Página Inicial" class="header-logo" id="slider" onclick='window.location.href="index.html"'>
+            <img class="header-logo-site selected" src="assets/images/logo300x300-silver.png"
+              alt="ir para página inicial" />
+            <img class="header-logo-site" src="assets/images/logo300x300-silver-1.png" alt="ir para página inicial" />
+            <img class="header-logo-site" src="assets/images/logo300x300-silver-2.png" alt="ir para página inicial" />
+            <img class="header-logo-site" src="assets/images/logo300x300-silver-3.png" alt="ir para página inicial" />
           </div>
         </div>
-      </header>
+        <div class="header-rigth">
+          <div class="header-button">QUEM SOMOS</div>
+          <div class="header-button"><a href="#navServicos">SERVIÇOS</a></div>
+          <div class="header-button"><a href="#navContato">CONTATO</a></div>
+        </div>
+      </div>
+    </header>
 
-      <main class="o-main">
-        <aside class="o-aside">
-          <div class="aside">
-            <div class="aside-items-logo">
-              <h1 id="digitarLogo">Lado Verde</h1>
-              <span id="digitaServicos"></span>
-            </div>
+    <main class="o-main">
+      <aside class="o-aside">
+        <div class="aside">
+          <div class="aside-items-logo">
+            <h1 id="digitarLogo">Lado Verde</h1>
+            <span id="digitaServicos"><noscript>CONSULTORIA AMBIENTAL</noscript></span>
           </div>
-        </aside>
-        <article>
-          <div class="servicosResumidos info-items">
-            <div class="span-servicos">
-              <span>DEIXA COM A NOSSA EQUIPE!!!</span>
-            </div>
+        </div>
+      </aside>
+      <article>
+        <div class="servicosResumidos info-items">
+          <div class="span-servicos">
+            <span>DEIXA COM A NOSSA EQUIPE!!!</span>
+          </div>
 
+          <div class="resumidos-txt">
+            <p>
+              A <b class="important">Lado Verde</b> desempenha atividades de
+              consultoria e assessoria ambiental.
+            </p>
+
+            <br />
+
+            <p>
+              Como <b class="important">facilitadora</b> entre o cliente e os
+              órgãos ambientais, analisamos todas as etapas das atividades
+              empresariais, buscando a redução de custos sócio-ambientais e
+              gerando melhores resultados para o
+              <b class="important">empreendimento</b>.
+            </p>
+            <br />
+            <a href="#navContato"><b class="button">FALE JÁ COM A NOSSA CONSULTORIA</b></a>
+          </div>
+        </div>
+      </article>
+      <div id="navServicos" class="titleServices servicesTitle">
+        <i class="fa-solid fa-leaf"> </i>
+        <h2> Serviços</h2>
+      </div>
+      <section>
+
+        <div class="servicosResumidos residuos">
+          <div class="span-servicos"><span>Gestão de Resíduos</span></div>
+          <div class="resumidos-img">
+            <img src="assets/images/residuos.jpg" alt="" />
+          </div>
+          <div class="resumidos-txt">
+            <ul>
+              <li class="itens-servicos">
+                PGRS- Plano de Gerenciamento de Resíduos Sólidos
+              </li>
+              <li class="itens-servicos">
+                PGRSCC- Plano de Gerenciamento de Resíduos Sólidos da
+                Construção Civil
+              </li>
+              <li class="itens-servicos">
+                PGRSS- Plano de Gerenciamento de Resíduos do Serviço de Saúde
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="servicosResumidos ibama">
+          <div class="span-servicos"><span>Serviços IBAMA</span></div>
+          <div class="resumidos-img">
+            <img src="assets/images/ibama.jpg" alt="" />
+          </div>
+          <div class="resumidos-txt">
+            <ul>
+              <li class="itens-servicos">
+                PGRS- Plano de Gerenciamento de Resíduos Sólidos
+              </li>
+              <li class="itens-servicos">
+                RAPP- Relatório de Atividades Potencialmente Poluidoras e
+                Utilizadoras de Recursos Ambientais
+              </li>
+              <li class="itens-servicos">
+                CTF/APP- Cadastro Técnico Federal
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="servicosResumidos outorga">
+          <div class="span-servicos"><span>Outorga</span></div>
+          <div class="resumidos-img">
+            <img src="assets/images/recursos_hidricos.jpg" alt="" />
+          </div>
+          <div class="resumidos-txt">
+            <ul>
+              <li class="itens-servicos">Outorga de Recursos Hídricos</li>
+            </ul>
+          </div>
+        </div>
+        <div class="servicosResumidos rural">
+          <div class="span-servicos"><span>Regularização Rural</span></div>
+          <div class="resumidos-img">
+            <img src="assets/images/rural.jpg" alt="" />
+          </div>
+          <div class="resumidos-txt">
+            <ul>
+              <li class="itens-servicos">CAR- Cadastro Ambiental Rural</li>
+            </ul>
+          </div>
+        </div>
+        <div class="servicosResumidos licenciamento">
+          <span>Licenciamento Ambiental</span>
+          <div class="resumidos-img">
+            <img src="assets/images/vegetacao.jpg" alt="" />
+          </div>
+          <div class="resumidos-txt">
+            <ul>
+              <li class="itens-servicos">LP- Licença Prévia</li>
+              <li class="itens-servicos">LI- Licença de Instalação</li>
+              <li class="itens-servicos">LO- Licença de Operação</li>
+              <li class="itens-servicos">
+                RLO- Renovação da Licença de Operação
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="servicosResumidos certRegularidade">
+          <div class="span-servicos">
+            <span>Certificado de Regularidade</span>
+          </div>
+          <div class="resumidos-img">
+            <img src="assets/images/licenciamento.jpg" alt="" />
+          </div>
+          <div class="resumidos-txt">
+            <ul>
+              <li class="itens-servicos">Serviços Florestais</li>
+              <li class="itens-servicos">
+                Laudo de Caracterização da Vegetação
+              </li>
+              <li class="itens-servicos">
+                Autorização para Supressão da Vegetação
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="titleServices contactTitle">
+          <i class="bi bi-envelope-at-fill"> </i>
+          <h2> Contato</h2>
+        </div>
+        <article id="navContato" class="contact-form">
+          <div class="contactForm">
             <div class="resumidos-txt">
-              <p>
-                A <b class="important">Lado Verde</b> desempenha atividades de
-                consultoria e assessoria ambiental.
-              </p>
-
+              <div class="resultForm">
+                <div class="resultItems">
+                  <h3 id="prospect" class="important"></h3>
+                  <p>A <b class="important">Lado Verde</b> agradece seu contato.</p>
+                  <p class="result-ok">Menssagem enviada com Sucesso!</p>
+                  <p style="cursor: pointer;" onclick="fecharAbrir('.resultForm','#formItems')"><i
+                      class="bi bi-x-square-fill" style="color: Tomato; margin: 0"> </i> FECHAR</p>
+                </div>
+              </div>
+              <form id="formItems" autocomplete="off">
+                <div class="important" style="text-align: center; margin: 8px;color: Tomato;">
+                  Preencha Todos os Campos
+                </div>
+                <div class="formail">
+                  <input type="text" name="3 Nome" required minlength="3" autocomplete="off" placeholder="Nome"
+                    id="nameContact" class="form-contact-items" onfocusout="focusOutForm('nameContact','3')" />
+                </div>
+                <div class="formail">
+                  <input type="email" name="5 Email" required minlength="5" autocomplete="off" placeholder="Email"
+                    id="emailContact" class="form-contact-items" onfocusout="emailFormRegex('emailContact')" />
+                </div>
+                <div class="formail">
+                  <input type="text" name="5 Assunto" required minlength="5" autocomplete="off" placeholder="Assunto"
+                    id="subjectContact" class="form-contact-items" onfocusout="focusOutForm('subjectContact','5')" />
+                </div>
+                <div class="formail">
+                  <textarea required minlength="10" name="10 Mensagem" placeholder="Mensagem" id="messageContact"
+                    class="form-contact-items" onfocusout="focusOutForm('messageContact','10')"></textarea>
+                </div>
+                <button class="button" title="Enviar Formulário" alt="Enviar Formulário">
+                  Enviar Formulário
+                </button>
+              </form>
               <br />
-
+            </div>
+            <div class="contactConsultora">
+              <img src="assets/images/debora_valias.jpg" alt="" />
+              <h2>Olá!</h2>
+              <h3 id="clientForm"></h3>
               <p>
-                Como <b class="important">facilitadora</b> entre o cliente e os
-                órgãos ambientais, analisamos todas as etapas das atividades
-                empresariais, buscando a redução de custos sócio-ambientais e
-                gerando melhores resultados para o
-                <b class="important">empreendimento</b>.
+                Eu me chama <b class="important">Débora</b> e vou tirar todas
+                as suas dúvidas!
               </p>
-              <br />
-              <a href="#navContato"
-                ><b class="button">FALE JÁ COM A NOSSA CONSULTORIA</b></a
-              >
+              <span id="errorsSpan"></span>
+              <p class="email"></p>
             </div>
           </div>
         </article>
-        <section>
-          <div class="servicosResumidos residuos">
-            <div class="span-servicos"><span>Gestão de Resíduos</span></div>
-            <div class="resumidos-img">
-              <img src="assets/images/residuos.jpg" alt="" />
-            </div>
-            <div class="resumidos-txt">
-              <ul>
-                <li class="itens-servicos">
-                  PGRS- Plano de Gerenciamento de Resíduos Sólidos
-                </li>
-                <li class="itens-servicos">
-                  PGRSCC- Plano de Gerenciamento de Resíduos Sólidos da
-                  Construção Civil
-                </li>
-                <li class="itens-servicos">
-                  PGRSS- Plano de Gerenciamento de Resíduos do Serviço de Saúde
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="servicosResumidos ibama">
-            <div class="span-servicos"><span>Serviços IBAMA</span></div>
-            <div class="resumidos-img">
-              <img src="assets/images/ibama.jpg" alt="" />
-            </div>
-            <div class="resumidos-txt">
-              <ul>
-                <li class="itens-servicos">
-                  PGRS- Plano de Gerenciamento de Resíduos Sólidos
-                </li>
-                <li class="itens-servicos">
-                  RAPP- Relatório de Atividades Potencialmente Poluidoras e
-                  Utilizadoras de Recursos Ambientais
-                </li>
-                <li class="itens-servicos">
-                  CTF/APP- Cadastro Técnico Federal
-                </li>
-              </ul>
-            </div>
-          </div>
+      </section>
+    </main>
+    <footer class="o-footer">
+      <p><b class="important"><a href="#navInicio">Lado Verde</a></b>| Consultoria Ambiental | 2023</p>
+      <p>Missão | Valores | Visão</p>
 
-          <div class="servicosResumidos outorga">
-            <div class="span-servicos"><span>Outorga</span></div>
-            <div class="resumidos-img">
-              <img src="assets/images/recursos_hidricos.jpg" alt="" />
-            </div>
-            <div class="resumidos-txt">
-              <ul>
-                <li class="itens-servicos">Outorga de Recursos Hídricos</li>
-              </ul>
-            </div>
-          </div>
-          <div class="servicosResumidos rural">
-            <div class="span-servicos"><span>Regularização Rural</span></div>
-            <div class="resumidos-img">
-              <img src="assets/images/rural.jpg" alt="" />
-            </div>
-            <div class="resumidos-txt">
-              <ul>
-                <li class="itens-servicos">CAR- Cadastro Ambiental Rural</li>
-              </ul>
-            </div>
-          </div>
-          <div class="servicosResumidos licenciamento">
-            <span>Licenciamento Ambiental</span>
-            <div class="resumidos-img">
-              <img src="assets/images/vegetacao.jpg" alt="" />
-            </div>
-            <div class="resumidos-txt">
-              <ul>
-                <li class="itens-servicos">LP- Licença Prévia</li>
-                <li class="itens-servicos">LI- Licença de Instalação</li>
-                <li class="itens-servicos">LO- Licença de Operação</li>
-                <li class="itens-servicos">
-                  RLO- Renovação da Licença de Operação
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="servicosResumidos certRegularidade">
-            <div class="span-servicos">
-              <span>Certificado de Regularidade</span>
-            </div>
-            <div class="resumidos-img">
-              <img src="assets/images/licenciamento.jpg" alt="" />
-            </div>
-            <div class="resumidos-txt">
-              <ul>
-                <li class="itens-servicos">Serviços Florestais</li>
-                <li class="itens-servicos">
-                  Laudo de Caracterização da Vegetação
-                </li>
-                <li class="itens-servicos">
-                  Autorização para Supressão da Vegetação
-                </li>
-              </ul>
-            </div>
-          </div>
-          <article id="navContato" class="contact-form">
-            <div class="contactForm">
-              <div class="resumidos-txt">
-                <form id="formItems" autocomplete="off">
-                  <div class="important" style="text-align: center; margin: 8px;">
-                    Preencha Todos os Campos
-                  </div>
-                  <div class="formail">
-                    <input
-                      type="text" name="3 Nome" required autocomplete="off"
-                      placeholder="Nome"
-                      id="nameContact"
-                      class="form-contact-items"
-                      onfocusout="focusOutForm('nameContact','3')"
-                    />
-                  </div>
-                  <div class="formail">
-                    <input
-                      type="email" name="5 Email" required autocomplete="off"
-                      placeholder="Email"
-                      id="emailContact"
-                      class="form-contact-items"
-                      onfocusout="emailFormRegex('emailContact')"
-                    />
-                  </div>
-                  <div class="formail">
-                    <input
-                      type="text" name="5 Assunto" required autocomplete="off"
-                      placeholder="Assunto"
-                      id="subjectContact"
-                      class="form-contact-items"
-                      onfocusout="focusOutForm('subjectContact','5')"
-                    />
-                  </div>
-                  <div class="formail">
-                    <textarea required name="10 Mensagem"
-                      placeholder="Mensagem"
-                      id="messageContact"
-                      class="form-contact-items"
-                      onfocusout="focusOutForm('messageContact','10')"
-                    ></textarea>
-                  </div>
-                  <button class="button" title="Enviar Formulário" alt="Enviar Formulário">Enviar Formulário</button>
-                </form>
-                <br />
-                
-              </div>
-              <div class="contactConsultora">
-                <img src="assets/images/debora_valias.jpg" alt="" />
-                <h2>Olá!</h2><h3 id="clientForm"></h3>
-                <p>
-                  Eu me chama <b class="important">Débora</b> e vou tirar todas
-                  as suas dúvidas!
-                </p>
-                <span id="errorsSpan"></span>
+    </footer>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
 
-              </div>
-            </div>
-          </article>
-        </section>
-      </main>
-      <footer class="o-footer">
-        <b class="important"><a href="#navInicio">Lado Verde</a></b> |
-        Consultoria Ambiental | 2023
-      </footer>
-    </div>
-    <script src="assets/js/script.js"></script>
-  </body>
 </html>

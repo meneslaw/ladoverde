@@ -1,22 +1,19 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 
-@media screen and (max-width: 799px){
-    .container{
-        padding: 0;
-        border: 1px solid;
-    }
-}
-a{
+
+a {
     text-decoration: none;
     color: $green-normal;
     font-weight: 600;
 }
-article{
+
+article {
     position: relative;
     scroll-behavior: smooth;
     scroll-snap-type: mandatory;
 }
-#item-this{
+
+#item-this {
     position: absolute;
     right: 0;
     top: 0;
@@ -28,14 +25,18 @@ article{
     z-index: -1;
     overflow: hidden;
 }
-#itema-this:not(:target), #itema-this:not(:hover){
+
+#itema-this:not(:target),
+#itema-this:not(:hover) {
     overflow: hidden;
 }
-#itema-this:hover{
-    overflow:visible;
+
+#itemk-this:hover {
+    overflow: visible;
     opacity: 1;
 }
-#item-this:target{
+
+#item-this:target {
     opacity: 1;
     overflow: visible;
 }

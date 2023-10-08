@@ -1,5 +1,5 @@
-article{
-    
+article {
+
     border-radius: 0px;
     height: 350px;
     width: 100%;
@@ -7,47 +7,63 @@ article{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+
 }
-.contact-form{
-    margin-top: 40px;
+
+.contact-form {
+    margin-top: 0;
     border-radius: 0px;
-    height: 390px;
+    height: 100%;
     width: 100%;
-    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-section article .resumidos-txt{
+
+section article .resumidos-txt {
     width: 50%;
-    height: 390px;
+    height: 100%;
 }
-section article .contactConsultora{
+
+section article .contactConsultora {
     width: 50%;
-    height: 390px;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.contactConsultora img{
+
+.contactConsultora>span>p,
+.contactConsultora>.email {
+    font-size: .7rem;
+    font-weight: 600;
+    color: $red-errors;
+    text-align: left;
+}
+
+.contactConsultora img {
     border: 5px solid $primary-normal;
     border-radius: 50%;
-    max-width: 300px;
-    height: 300px;
+    width: 190px;
+    height: 190px;
 }
-section > article > .contactForm{
+
+.contactConsultora>p {
+    font-size: .9rem;
+}
+
+section>article>.contactForm {
     display: flex;
     background-image: url("./assets/images/handshake-4002834_1280.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-   
     text-align: center;
     justify-content: center;
-    align-items: center;
     width: 100%;
-    
-    
+    height: 100%;
 }
-.resumidos-txt input{
+
+.resumidos-txt input {
     height: 40px;
     width: 80%;
     outline: 0;
@@ -57,13 +73,15 @@ section > article > .contactForm{
     margin-bottom: 5px;
     padding: 4px;
 }
-.resumidos-txt textarea{
+
+.resumidos-txt textarea {
     height: 155px;
     width: 80%;
 }
-.info-items{
+
+.info-items {
     display: flex;
-    border:0;
+    border: 0;
     border-radius: 0px;
     background: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121ec0);
     text-align: center;
@@ -73,14 +91,17 @@ section > article > .contactForm{
     margin: 0;
     justify-content: center;
 }
-section .contact-form button{
+
+section .contact-form button {
     font-size: 14px;
     font-weight: 600;
     padding: 10px 25px;
     text-transform: uppercase;
     color: $white-dark;
 }
-section .contact-form input, section .contact-form textarea{
+
+section .contact-form input,
+section .contact-form textarea {
     background-color: $green-dark;
     color: $green-light;
     font-size: .9rem;
@@ -91,17 +112,23 @@ section .contact-form input, section .contact-form textarea{
     padding: 10px;
     letter-spacing: .1rem;
     border-left: 10px solid transparent;
+    border-bottom: 1px solid $white-dark  !important;
+    border-top: 1px solid $white-dark  !important;
+    border-right: 1px solid $white-dark  !important;
 }
-section .contact-form textarea{
+
+section .contact-form textarea {
     font-size: 1rem;
     margin-bottom: 5px;
 }
-section .contact-form input:focus, section .contact-form textarea:focus{
+
+section .contact-form input:focus,
+section .contact-form textarea:focus {
     border-left: 10px solid gold;
     background-color: $primary-normal;
 }
 
-article .button{
+article .button {
     padding: 14px;
     border: 1px solid $white-normal;
     font-size: 15px;
@@ -109,35 +136,88 @@ article .button{
     background-color: $green-dark;
     transition: .8s ease-in;
 }
-article .button:hover{
-    cursor:pointer;
+
+article .button:hover {
+    cursor: pointer;
     background-color: transparent;
     opacity: 0.5;
 
 }
-article a{
+
+article a {
     color: $white-normal;
-    
+
 }
 
-article > .info-items > .span-servicos span{
+article>.info-items>.span-servicos span {
     text-align: center;
     font-size: 24px;
-    border:0;
+    border: 0;
     padding: 0;
     margin: 0;
     width: 100%;
 }
 
-article > .info-items > .resumidos-txt p{
+.divErrorItems {
+    display: flex;
+    width: 100%;
+    background: radial-gradient(black, transparent);
+}
+
+.divErrorItems>.bi {
+    margin: 0;
+    margin-right: 10px;
+    margin-left: 1%;
+    font-size: 1rem;
+}
+
+article>.info-items>.resumidos-txt p {
     padding: 3px;
     margin: 10px 0px;
     font-size: 16px;
     font-weight: 500;
 }
-.important, .important a{
+
+.important,
+.important a {
     font-weight: 600;
     padding: 0;
     color: $green-light;
     text-decoration: none;
+}
+
+.resultForm {
+    transition: all .8s ease-in-out;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 10px
+}
+
+.resultItems {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 30vh;
+    background: $primary-dark;
+    border-radius: 14px;
+    opacity: 1;
+    border-left: 14px solid $green-light;
+    border-top: 1px solid $primary-light;
+    border-right: 1px solid $primary-light;
+    border-bottom: 1px solid $primary-light;
+}
+
+.resultItems .result-ok {
+    font-weight: 600;
+    color: $red-errors;
+}
+
+#formItems {
+    transition: all .8s ease-in-out;
 }
