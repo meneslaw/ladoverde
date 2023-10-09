@@ -267,15 +267,26 @@ dialog:modal {
   position: relative;
   inset-block-start: auto;
   inset-block-end: auto;
-  width: 55%;
-  height: 40%;
+  width: 65%;
+  min-height: 45%;
   margin: 0 auto;
   border: 0;
-  opacity: 1;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("./assets/images/licenciamento.jpg");
+  border-radius: 10px;
+  opacity: 0.8;
+  background: #000;
+  color: #edeaef;
+  font-size: 0.8rem;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.modalTitle {
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+#modalDialog p {
+  margin: 5px;
 }
 
 @media screen and (max-width: 880px) {

@@ -1,18 +1,31 @@
-function queryObj() {
-    var result = {}, keyValuePairs = location.search.slice(1).split("&");
-    keyValuePairs.forEach(function(keyValuePair) {
-        keyValuePair = keyValuePair.split('=');
-        result[decodeURIComponent(keyValuePair[0])] = decodeURIComponent(keyValuePair[1]) || '';
-    });
-    return result;
+function lerTxt(subTitle) {
+    fetch("./assets/servicos/servicos.json")
+        .then((response) => response.json())
+        .then((data) => {
+            const resposta = data['Services'];
+            //console.log(resposta)
+            for (var i = 0; i < resposta.length; i++) {
+                var res = resposta[i];
+                if (res.serviceName == subTitle) {
+                    const info = document.querySelector(".modalInfo");
+                    console.log(subTitle, info.innerHTML = res.infoService)
+
+                }
+            }
+
+        })
 }
-var myParam = queryObj();
-        console.log(myParam);
-        const div = document.getElementById("chama");
-        
-        fetch(div.innerHTML = myParam['nav'] + ".html")
-            .then(response => response.text()) 
-            .then(textString => 
-            {
-                div.innerHTML = textString;
-            });
+
+const modalHref = document.getElementsByTagName("section")[0];
+
+modalHref.addEventListener('click', (event) => {
+    if (event.target.classList == "showServicesModal") {
+        const modalDialogTitle = document.querySelector(".modalTitle");
+        modalDialogTitle.innerHTML = event.target.textContent;
+        lerTxt(event.target.textContent);
+    } else {
+        console.log("clicou em qualquer lugar")
+    }
+
+
+}, true);

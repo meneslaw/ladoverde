@@ -1,0 +1,79 @@
+{
+    "Services": [
+        {
+            "primaryName": "GESTÃO DE RESÍDUOS",
+            "serviceName": "PGRS- Plano de Gerenciamento de Resíduos Sólidos",
+            "infoService": "dddddddddddddddd Molestiae assumenda dignissimos sequi recusandae et! Quidem atque nobis eos pariatur voluptatem reprehenderit ipsum voluptatum exercitationem autem minima, vel dolore esse? Voluptas recusandae harum quod ea natus, provident ullam blanditiis?"
+        },
+        {
+            "primaryName": "GESTÃO DE RESÍDUOS",
+            "serviceName": "PGRSCC- Plano de Gerenciamento de Resíduos Sólidos da Construção Civil",
+            "infoService": "Mffffffffffffffff olestiae assumenda dignissimos sequi recusandae et! Quidem atque nobis eos pariatur voluptatem reprehenderit ipsum voluptatum exercitationem autem minima, vel dolore esse? Voluptas recusandae harum quod ea natus, provident ullam blanditiis?"
+        },
+        {
+            "primaryName": "GESTÃO DE RESÍDUOS",
+            "serviceName": "PGRSS- Plano de Gerenciamento de Resíduos do Serviço de Saúde",
+            "infoService": "ssssssss Molestiae assumenda dignissimos sequi recusandae et! Quidem atque nobis eos pariatur voluptatem reprehenderit ipsum voluptatum exercitationem autem minima, vel dolore esse? Voluptas recusandae harum quod ea natus, provident ullam blanditiis?"
+        },
+        {
+            "primaryName": "SERVIÇOS IBAMA",
+            "serviceName": "PGRS - Plano de Gerenciamento de Resíduos Sólidos",
+            "infoService": "Molestiae assumenda dignissimos sequi recusandae et! Quidem atque nobis eos pariatur voluptatem reprehenderit ipsum voluptatum exercitationem autem minima, vel dolore esse? Voluptas recusandae harum quod ea natus, provident ullam blanditiis?"
+        },
+        {
+            "primaryName": "SERVIÇOS IBAMA",
+            "serviceName": "RAPP- Relatório de Atividades Potencialmente Poluidoras e Utilizadoras de Recursos Ambientais",
+            "infoService": "Molestiae assumenda dignissimos sequi recusandae et! Quidem atque nobis eos pariatur voluptatem reprehenderit ipsum voluptatum exercitationem autem minima, vel dolore esse? Voluptas recusandae harum quod ea natus, provident ullam blanditiis?"
+        },
+        {
+            "primaryName": "SERVIÇOS IBAMA",
+            "serviceName": "CTF/APP- Cadastro Técnico Federal",
+            "infoService": "Molestiae assumenda dignissimos sequi recusandae et! Quidem atque nobis eos pariatur voluptatem reprehenderit ipsum voluptatum exercitationem autem minima, vel dolore esse? Voluptas recusandae harum quod ea natus, provident ullam blanditiis?"
+        },
+        {
+            "primaryName": "OUTORGA",
+            "serviceName": "Outorga de Recursos Hídricos",
+            "infoService": "Molestiae assumenda dignissimos sequi recusandae et! Quidem atque nobis eos pariatur voluptatem reprehenderit ipsum voluptatum exercitationem autem minima, vel dolore esse? Voluptas recusandae harum quod ea natus, provident ullam blanditiis?"
+        },
+        {
+            "primaryName": "REGULARIZAÇÃO RURAL",
+            "serviceName": "CAR- Cadastro Ambiental Rural",
+            "infoService": "Molestiae assumenda dignissimos sequi recusandae et! Quidem atque nobis eos pariatur voluptatem reprehenderit ipsum voluptatum exercitationem autem minima, vel dolore esse? Voluptas recusandae harum quod ea natus, provident ullam blanditiis?"
+        },
+        {
+            "primaryName": "LICENCIAMENTO AMBIENTAL",
+            "serviceName": "LP- Licença Prévia",
+            "infoService": "OKOK Molestiae assumenda dignissimos sequi recusandae et! Quidem atque nobis eos pariatur voluptatem reprehenderit ipsum voluptatum exercitationem autem minima, vel dolore esse? Voluptas recusandae harum quod ea natus, provident ullam blanditiis?"
+        },
+        {
+            "primaryName": "LICENCIAMENTO AMBIENTAL",
+            "serviceName": "LI- Licença de Instalação",
+            "infoService": "Molestiae assumenda dignissimos sequi recusandae et! Quidem atque nobis eos pariatur voluptatem reprehenderit ipsum voluptatum exercitationem autem minima, vel dolore esse? Voluptas recusandae harum quod ea natus, provident ullam blanditiis?"
+        },
+        {
+            "primaryName": "LICENCIAMENTO AMBIENTAL",
+            "serviceName": "LO- Licença de Operação",
+            "infoService": "Molestiae assumenda dignissimos sequi recusandae et! Quidem atque nobis eos pariatur voluptatem reprehenderit ipsum voluptatum exercitationem autem minima, vel dolore esse? Voluptas recusandae harum quod ea natus, provident ullam blanditiis?"
+        },
+        {
+            "primaryName": "LICENCIAMENTO AMBIENTAL",
+            "serviceName": "RLO- Renovação da Licença de Operação",
+            "infoService": "Molestiae assumenda dignissimos sequi recusandae et! Quidem atque nobis eos pariatur voluptatem reprehenderit ipsum voluptatum exercitationem autem minima, vel dolore esse? Voluptas recusandae harum quod ea natus, provident ullam blanditiis?"
+        },
+        {
+            "primaryName": "CERTIFICADO DE REGULARIDADE",
+            "serviceName": "Serviços Florestais",
+            "infoService": "Molestiae assumenda dignissimos sequi recusandae et! Quidem atque nobis eos pariatur voluptatem reprehenderit ipsum voluptatum exercitationem autem minima, vel dolore esse? Voluptas recusandae harum quod ea natus, provident ullam blanditiis?"
+        },
+        {
+            "primaryName": "CERTIFICADO DE REGULARIDADE",
+            "serviceName": "Laudo de Caracterização da Vegetação",
+            "infoService": "Molestiae assumenda dignissimos sequi recusandae et! Quidem atque nobis eos pariatur voluptatem reprehenderit ipsum voluptatum exercitationem autem minima, vel dolore esse? Voluptas recusandae harum quod ea natus, provident ullam blanditiis?"
+        },
+        {
+            "primaryName": "CERTIFICADO DE REGULARIDADE",
+            "serviceName": "Autorização para Supressão da Vegetação",
+            "infoService": "Molestiae assumenda dignissimos sequi recusandae et! Quidem atque nobis eos pariatur voluptatem reprehenderit ipsum voluptatum exercitationem autem minima, vel dolore esse? Voluptas recusandae harum quod ea natus, provident ullam blanditiis?"
+        }
+    ]
+}

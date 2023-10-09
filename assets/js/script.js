@@ -113,7 +113,13 @@ function emailFormRegex() {
     }
 }
 var form = document.getElementById('formItems');
-
+form.addEventListener('focusout', (event) => {
+    const targetFormail = event.target;
+    var numberMin = targetFormail.name.split(" ");
+    focusOutForm(targetFormail.id, numberMin[0]);
+    console.log(targetFormail.id);
+    (targetFormail.id == "emailContact") ? emailFormRegex('emailContact') : false
+}, true);
 form.addEventListener('focus', (event) => {
     event.target.style.borderLeftColor = "gold";
 }, true);
