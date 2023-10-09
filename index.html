@@ -126,7 +126,7 @@
         <h2> Serviços</h2>
       </div>
       <section>
-        <div class="servicosResumidos residuos">
+        <div class="servicosResumidos residuos" id="navResiduos">
           <div class="span-servicos"><span>Gestão de Resíduos</span></div>
           <div class="resumidos-img">
             <img src="assets/images/residuos.jpg" alt="Restos de construções e saneamento básico precário">
@@ -135,17 +135,17 @@
             <ul>
               <li class="itens-servicos">
                 <a class="showServicesModal"
-                   href="#navServices"
+                   href="#navResiduos"
                    onclick="window.modalDialog.showModal();">PGRS- Plano de Gerenciamento de Resíduos Sólidos</a>
               </li>
               <li class="itens-servicos">
                 <a class="showServicesModal"
-                   href="#navServices"
+                   href="#navResiduos"
                    onclick="modalDialog.showModal();">PGRSCC- Plano de Gerenciamento de Resíduos Sólidos da Construção Civil</a>
               </li>
               <li class="itens-servicos">
                 <a class="showServicesModal"
-                   href="#navServices"
+                   href="#navResiduos"
                    onclick="modalDialog.showModal();">PGRSS- Plano de Gerenciamento de Resíduos do Serviço de Saúde</a>
               </li>
             </ul>
@@ -159,14 +159,19 @@
           <div class="resumidos-txt">
             <ul>
               <li class="itens-servicos">
-                PGRS - Plano de Gerenciamento de Resíduos Sólidos
+                <a class="showServicesModal"
+                   href="#navServices"
+                   onclick="modalDialog.showModal();">PGRS - Plano de Gerenciamento de Resíduos Sólidos</a>
               </li>
               <li class="itens-servicos">
-                RAPP- Relatório de Atividades Potencialmente Poluidoras e
-                Utilizadoras de Recursos Ambientais
+                <a class="showServicesModal"
+                   href="#navServices"
+                   onclick="modalDialog.showModal();">RAPP- Relatório de Atividades Potencialmente Poluidoras e Utilizadoras de Recursos Ambientais</a>
               </li>
               <li class="itens-servicos">
-                CTF/APP- Cadastro Técnico Federal
+                <a class="showServicesModal"
+                   href="#navServices"
+                   onclick="modalDialog.showModal();">CTF/APP- Cadastro Técnico Federal</a>
               </li>
             </ul>
           </div>
@@ -179,7 +184,11 @@
           </div>
           <div class="resumidos-txt">
             <ul>
-              <li class="itens-servicos">Outorga de Recursos Hídricos</li>
+              <li class="itens-servicos">
+                <a class="showServicesModal"
+                   href="#navServices"
+                   onclick="modalDialog.showModal();">Outorga de Recursos Hídricos</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -190,7 +199,11 @@
           </div>
           <div class="resumidos-txt">
             <ul>
-              <li class="itens-servicos">CAR- Cadastro Ambiental Rural</li>
+              <li class="itens-servicos">
+                <a class="showServicesModal"
+                   href="#navServices"
+                   onclick="modalDialog.showModal();">CAR- Cadastro Ambiental Rural</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -201,11 +214,25 @@
           </div>
           <div class="resumidos-txt">
             <ul>
-              <li class="itens-servicos">LP- Licença Prévia</li>
-              <li class="itens-servicos">LI- Licença de Instalação</li>
-              <li class="itens-servicos">LO- Licença de Operação</li>
               <li class="itens-servicos">
-                RLO- Renovação da Licença de Operação
+                <a class="showServicesModal"
+                   href="#navServices"
+                   onclick="modalDialog.showModal();">LP- Licença Prévia</a>
+              </li>
+              <li class="itens-servicos">
+                <a class="showServicesModal"
+                   href="#navServices"
+                   onclick="modalDialog.showModal();">LI- Licença de Instalação</a>
+              </li>
+              <li class="itens-servicos">
+                <a class="showServicesModal"
+                   href="#navServices"
+                   onclick="modalDialog.showModal();">LO- Licença de Operação</a>
+              </li>
+              <li class="itens-servicos">
+                <a class="showServicesModal"
+                   href="#navServices"
+                   onclick="modalDialog.showModal();">RLO- Renovação da Licença de Operação</a>
               </li>
             </ul>
           </div>
@@ -215,17 +242,24 @@
             <span>Certificado de Regularidade</span>
           </div>
           <div class="resumidos-img">
-            <a href="#navServicos" onclick="window.modalDialog.showModal();"><img src="assets/images/licenciamento.jpg"
-                   alt="campo aberto com arvores"></a>
+            <img src="assets/images/licenciamento.jpg" alt="campo aberto com arvores">
           </div>
           <div class="resumidos-txt">
             <ul>
-              <li class="itens-servicos">Serviços Florestais</li>
               <li class="itens-servicos">
-                Laudo de Caracterização da Vegetação
+                <a class="showServicesModal"
+                   href="#navServices"
+                   onclick="modalDialog.showModal();">Serviços Florestais</a>
               </li>
               <li class="itens-servicos">
-                Autorização para Supressão da Vegetação
+                <a class="showServicesModal"
+                   href="#navServices"
+                   onclick="modalDialog.showModal();">Laudo de Caracterização da Vegetação</a>
+              </li>
+              <li class="itens-servicos">
+                <a class="showServicesModal"
+                   href="#navServices"
+                   onclick="modalDialog.showModal();">Autorização para Supressão da Vegetação</a>
               </li>
             </ul>
           </div>
@@ -297,9 +331,12 @@
   <div class="modale">
     <dialog id="modalDialog">
       <div class="modalTitle">Autorização para Supressão da Vegetação</div>
-      <p class="modalInfo"> </p>
+      <span class="modalInfo"> </span>
       <form method="dialog">
-        <button class="button-close">Fechar</button>
+        <button class="button-close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="svgX" width="25px" fill="Tomato" viewBox="0 0 16 16">
+            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"></path>
+          </svg></button>
       </form>
     </dialog>
   </div>

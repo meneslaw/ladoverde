@@ -255,6 +255,19 @@ dialog[open] {
   flex-direction: column;
 }
 
+#modalDialog > form > button {
+  padding: 20px 1px 0px 1px;
+  background-color: transparent;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.svgX:hover {
+  fill: rgb(92, 226, 92);
+}
+
 dialog::-webkit-backdrop {
   background-color: rgba(0, 30, 0, 0.7);
 }
@@ -275,7 +288,7 @@ dialog:modal {
   opacity: 0.8;
   background: #000;
   color: #edeaef;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   padding: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -286,7 +299,18 @@ dialog:modal {
 }
 
 #modalDialog p {
-  margin: 5px;
+  margin: 10px 0px 10px 0px;
+  text-align: left;
+}
+
+.itens-servicos a {
+  color: #9ffaa3;
+  font-weight: 500;
+}
+
+.showServicesModal:hover {
+  background: #385029;
+  color: #fff;
 }
 
 @media screen and (max-width: 880px) {
@@ -837,6 +861,9 @@ section .contact-form .button {
   }
   footer {
     font-size: 80%;
+  }
+  dialog:modal {
+    width: 99%;
   }
 }
 @media screen and (max-width: 879px) {

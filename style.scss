@@ -89,6 +89,10 @@ body {
   footer {
     font-size: 80%;
   }
+
+  dialog:modal {
+    width: 99%;
+  }
 }
 
 @media screen and (max-width: 879px) {

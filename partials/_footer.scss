@@ -51,6 +51,19 @@ dialog[open] {
     flex-direction: column;
 }
 
+#modalDialog>form>button {
+    padding: 20px 1px 0px 1px;
+    background-color: transparent;
+    cursor: pointer;
+    color: $white-normal;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.svgX:hover {
+    fill: $green-normal;
+}
+
 dialog::backdrop {
     background-color: rgba(0, 30, 0, 0.7);
 
@@ -68,7 +81,7 @@ dialog:modal {
     opacity: .8;
     background: #000;
     color: $white-dark;
-    font-size: .8rem;
+    font-size: .9rem;
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -79,7 +92,18 @@ dialog:modal {
 }
 
 #modalDialog p {
-    margin: 05px;
+    margin: 10px 0px 10px 0px;
+    text-align: left;
+}
+
+.itens-servicos a {
+    color: $green-light;
+    font-weight: 500;
+}
+
+.showServicesModal:hover {
+    background: #385029;
+    color: $white-normal;
 }
 
 @media screen and (max-width: 880px) {
