@@ -34,6 +34,44 @@ footer {
     opacity: 1;
 }
 
+.modale {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    flex-direction: column;
+}
+
+dialog[open] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 30, 0, 0.7);
+
+}
+
+dialog:modal {
+    position: relative;
+    inset-block-start: auto;
+    inset-block-end: auto;
+    width: 55%;
+    height: 40%;
+    margin: 0 auto;
+    border: 0;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e),
+        url("./assets/images/licenciamento.jpg");
+}
+
 @media screen and (max-width: 880px) {
     .footer-circle {
         display: none;

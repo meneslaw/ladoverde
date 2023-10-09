@@ -149,6 +149,18 @@ aside .aside-items-logo {
   border: 19px solid rgb(110, 0, 0);
 }
 
+figure {
+  display: block;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+}
+
 a {
   text-decoration: none;
   color: rgb(92, 226, 92);
@@ -224,6 +236,46 @@ footer {
 
 .footer-circle:hover {
   opacity: 1;
+}
+
+.modale {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  flex-direction: column;
+}
+
+dialog[open] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+dialog::-webkit-backdrop {
+  background-color: rgba(0, 30, 0, 0.7);
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 30, 0, 0.7);
+}
+
+dialog:modal {
+  position: relative;
+  inset-block-start: auto;
+  inset-block-end: auto;
+  width: 55%;
+  height: 40%;
+  margin: 0 auto;
+  border: 0;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("./assets/images/licenciamento.jpg");
 }
 
 @media screen and (max-width: 880px) {

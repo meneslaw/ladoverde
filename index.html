@@ -126,7 +126,6 @@
         <h2> Serviços</h2>
       </div>
       <section>
-
         <div class="servicosResumidos residuos">
           <div class="span-servicos"><span>Gestão de Resíduos</span></div>
           <div class="resumidos-img">
@@ -211,7 +210,8 @@
             <span>Certificado de Regularidade</span>
           </div>
           <div class="resumidos-img">
-            <img src="assets/images/licenciamento.jpg" alt="campo aberto com arvores">
+            <a href="#navServicos" onclick="window.modalDialog.showModal();"><img src="assets/images/licenciamento.jpg"
+                alt="campo aberto com arvores"></a>
           </div>
           <div class="resumidos-txt">
             <ul>
@@ -285,10 +285,17 @@
     <footer class="o-footer">
       <p><b class="important"><a href="#navInicio">Lado Verde</a></b>| Consultoria Ambiental | 2023</p>
       <p>Missão | Valores | Visão</p>
-
     </footer>
   </div>
   <script src="assets/js/script.js"></script>
+  <div class="modale">
+    <dialog id="modalDialog">
+      <p>Conteúdo do modal</p>
+      <form method="dialog">
+        <button class="button-close">Fechar</button>
+      </form>
+    </dialog>
+  </div>
 </body>
 
 </html>
