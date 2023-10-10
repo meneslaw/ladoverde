@@ -263,7 +263,7 @@ dialog::backdrop {
   background-color: rgba(0, 30, 0, 0.7);
 }
 
-dialog:modal {
+dialog {
   position: relative;
   inset-block-start: auto;
   inset-block-end: auto;
@@ -929,7 +929,7 @@ section .contact-form .button {
   footer {
     font-size: 80%;
   }
-  dialog:modal {
+  dialog {
     width: 99%;
   }
 }
