@@ -155,9 +155,10 @@ a {
 
 article {
   position: relative;
+  /*
   scroll-behavior: smooth;
-  -ms-scroll-snap-type: mandatory;
-      scroll-snap-type: mandatory;
+  scroll-snap-type: mandatory;
+  */
 }
 
 #item-this {
@@ -313,7 +314,6 @@ dialog:modal {
     align-items: center;
     justify-content: center;
     bottom: 0;
-    top: left;
   }
   .footer h3 {
     padding: 10px;
@@ -940,7 +940,6 @@ section .contact-form .button {
   section > .servicosResumidos,
 .resumidos-txt {
     width: 100%;
-    align-items: left;
   }
   .resumidos-txt > ul > li {
     padding: 10px;

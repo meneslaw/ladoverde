@@ -1,0 +1,25 @@
+.animationlogo {
+    animation: rotacao 8s infinite alternate;
+    animation-delay: 0s;
+}
+
+@keyframes rotacao {
+
+    50%,
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+
+    0% {
+        transform: rotate(-360deg);
+    }
+
+    from {
+        opacity: .9;
+    }
+
+    to {
+        opacity: .8;
+    }
+}
