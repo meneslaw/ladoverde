@@ -281,7 +281,6 @@ dialog:modal {
   inset-block-start: auto;
   inset-block-end: auto;
   width: 65%;
-  min-height: 45%;
   margin: 0 auto;
   border: 0;
   border-radius: 10px;
@@ -291,6 +290,7 @@ dialog:modal {
   font-size: 0.9rem;
   padding: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: hidden;
 }
 
 .modalTitle {
@@ -313,6 +313,61 @@ dialog:modal {
   color: #fff;
 }
 
+.animationModal {
+  -webkit-animation: fade 2s;
+          animation: fade 2s;
+}
+
+.animationModalClose {
+  -webkit-animation: fade-close 2s;
+          animation: fade-close 2s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    height: 1%;
+  }
+  to {
+    height: 65%;
+  }
+}
+
+@keyframes fade {
+  from {
+    height: 1%;
+  }
+  to {
+    height: 65%;
+  }
+}
+@-webkit-keyframes fade-close {
+  from {
+    height: 65%;
+  }
+  to {
+    height: 1%;
+  }
+  from {
+    opacity: 0.9;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fade-close {
+  from {
+    height: 65%;
+  }
+  to {
+    height: 1%;
+  }
+  from {
+    opacity: 0.9;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @media screen and (max-width: 880px) {
   .footer-circle {
     display: none;
@@ -370,7 +425,7 @@ dialog:modal {
 }
 
 .imgListMob {
-  height: 50vh;
+  height: 1vh;
   min-width: 65px;
   display: inline-flex;
   flex-direction: column;
@@ -449,7 +504,8 @@ dialog:modal {
 }
 
 .header-left img {
-  width: 150px;
+  width: 100px;
+  height: 100px;
 }
 
 .header-left {
@@ -512,7 +568,6 @@ dialog:modal {
 #slider img {
   opacity: 0;
   position: absolute;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   transition: opacity 4s ease-in-out;
@@ -864,6 +919,42 @@ section .contact-form .button {
   }
   dialog:modal {
     width: 99%;
+  }
+}
+@media screen and (max-width: 440px) {
+  section > .servicosResumidos img {
+    display: none;
+  }
+  section > .servicosResumidos,
+.resumidos-txt {
+    width: 100%;
+    align-items: left;
+  }
+  .resumidos-txt > ul > li {
+    padding: 10px;
+  }
+  section > .servicosResumidos > .span-servicos {
+    height: 34px;
+  }
+  .opt-mob > .aside-items-logo h1 {
+    font-size: 1.9rem;
+    padding-top: 9px;
+  }
+  .opt-mob .aside-items-logo span {
+    font-size: 10px;
+  }
+  .opt-mob img {
+    width: 70px;
+  }
+  #item-this {
+    height: 60px;
+  }
+  #item-this .imgListMob .dv {
+    font-size: 0.8rem;
+  }
+  .imgListMob:hover {
+    width: 70%;
+    height: 46vh;
   }
 }
 @media screen and (max-width: 879px) {

@@ -95,6 +95,52 @@ body {
   }
 }
 
+@media screen and (max-width: 440px) {
+  section>.servicosResumidos img {
+    display: none;
+  }
+
+  section>.servicosResumidos,
+  .resumidos-txt {
+    width: 100%;
+    align-items: left;
+  }
+
+  .resumidos-txt>ul>li {
+    padding: 10px;
+  }
+
+  section>.servicosResumidos>.span-servicos {
+    height: 34px;
+  }
+
+  .opt-mob>.aside-items-logo h1 {
+    font-size: 1.9rem;
+    padding-top: 9px;
+  }
+
+  .opt-mob .aside-items-logo span {
+    font-size: 10px;
+  }
+
+  .opt-mob img {
+    width: 70px;
+  }
+
+  #item-this {
+    height: 60px;
+  }
+
+  #item-this .imgListMob .dv {
+    font-size: .8rem;
+  }
+
+  .imgListMob:hover {
+    width: 70%;
+    height: 46vh;
+  }
+}
+
 @media screen and (max-width: 879px) {
   section {
     justify-content: center;

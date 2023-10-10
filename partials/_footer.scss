@@ -74,7 +74,7 @@ dialog:modal {
     inset-block-start: auto;
     inset-block-end: auto;
     width: 65%;
-    min-height: 45%;
+
     margin: 0 auto;
     border: 0;
     border-radius: 10px;
@@ -84,6 +84,7 @@ dialog:modal {
     font-size: .9rem;
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
 }
 
 .modalTitle {
@@ -104,6 +105,46 @@ dialog:modal {
 .showServicesModal:hover {
     background: #385029;
     color: $white-normal;
+}
+
+.animationModal {
+    animation:
+
+        fade 2s;
+}
+
+.animationModalClose {
+    animation: fade-close 2s;
+}
+
+@keyframes fade {
+
+
+    from {
+        height: 1%;
+    }
+
+    to {
+        height: 65%;
+    }
+}
+
+@keyframes fade-close {
+    from {
+        height: 65%;
+    }
+
+    to {
+        height: 1%;
+    }
+
+    from {
+        opacity: .9;
+    }
+
+    to {
+        opacity: 0;
+    }
 }
 
 @media screen and (max-width: 880px) {
