@@ -1,9 +1,7 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline: 0;
 }
 
 li {
@@ -11,13 +9,13 @@ li {
 }
 
 body {
-  width: 100%;
-  height: 100vh;
   background-size: 100% 150px;
   background-repeat: no-repeat;
   background-image: linear-gradient(to bottom, rgba(40, 82, 1, 0.315), rgba(2, 85, 13, 0.6784313725));
   background: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), rgba(6, 18, 30, 0.7529411765));
   background-color: #06121e;
+  height: 100vh;
+  width: 100%;
 }
 
 section {
@@ -147,18 +145,6 @@ aside .aside-items-logo {
   margin: 0 auto;
   padding: 0 60px;
   border: 19px solid rgb(110, 0, 0);
-}
-
-figure {
-  display: block;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
-  -webkit-margin-start: 0;
-          margin-inline-start: 0;
-  -webkit-margin-end: 0;
-          margin-inline-end: 0;
 }
 
 a {
@@ -313,61 +299,6 @@ dialog:modal {
   color: #fff;
 }
 
-.animationModal {
-  -webkit-animation: fade 2s;
-          animation: fade 2s;
-}
-
-.animationModalClose {
-  -webkit-animation: fade-close 2s;
-          animation: fade-close 2s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    height: 1%;
-  }
-  to {
-    height: 65%;
-  }
-}
-
-@keyframes fade {
-  from {
-    height: 1%;
-  }
-  to {
-    height: 65%;
-  }
-}
-@-webkit-keyframes fade-close {
-  from {
-    height: 65%;
-  }
-  to {
-    height: 1%;
-  }
-  from {
-    opacity: 0.9;
-  }
-  to {
-    opacity: 0;
-  }
-}
-@keyframes fade-close {
-  from {
-    height: 65%;
-  }
-  to {
-    height: 1%;
-  }
-  from {
-    opacity: 0.9;
-  }
-  to {
-    opacity: 0;
-  }
-}
 @media screen and (max-width: 880px) {
   .footer-circle {
     display: none;
@@ -868,6 +799,87 @@ article > .info-items > .resumidos-txt p {
   transition: all 0.8s ease-in-out;
 }
 
+.animationModal {
+  -webkit-animation: fade 2s;
+          animation: fade 2s;
+}
+
+.animationModalClose {
+  -webkit-animation: fade-close 2s;
+          animation: fade-close 2s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    height: 1%;
+  }
+  to {
+    height: 65%;
+  }
+}
+
+@keyframes fade {
+  from {
+    height: 1%;
+  }
+  to {
+    height: 65%;
+  }
+}
+@-webkit-keyframes fade-close {
+  from {
+    height: 65%;
+  }
+  to {
+    height: 1%;
+  }
+  from {
+    opacity: 0.9;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fade-close {
+  from {
+    height: 65%;
+  }
+  to {
+    height: 1%;
+  }
+  from {
+    opacity: 0.9;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.animationlogo {
+  -webkit-animation: rotacao 8s infinite alternate;
+          animation: rotacao 8s infinite alternate;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+@-webkit-keyframes rotacao {
+  20%, 100% {
+    transform: rotate(-860deg);
+  }
+  0% {
+    transform: rotate(360deg);
+    opacity: 0.5;
+  }
+}
+
+@keyframes rotacao {
+  20%, 100% {
+    transform: rotate(-860deg);
+  }
+  0% {
+    transform: rotate(360deg);
+    opacity: 0.5;
+  }
+}
 .container {
   display: grid;
   width: 100%;

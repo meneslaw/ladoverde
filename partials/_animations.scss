@@ -1,0 +1,57 @@
+.animationModal {
+    animation: fade 2s;
+}
+
+.animationModalClose {
+    animation: fade-close 2s;
+}
+
+@keyframes fade {
+
+
+    from {
+        height: 1%;
+    }
+
+    to {
+        height: 65%;
+    }
+}
+
+@keyframes fade-close {
+    from {
+        height: 65%;
+    }
+
+    to {
+        height: 1%;
+    }
+
+    from {
+        opacity: .9;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.animationlogo {
+    animation: rotacao 8s infinite alternate;
+    animation-delay: 0s;
+}
+
+@keyframes rotacao {
+
+
+    20%,
+    100% {
+        transform: rotate(-860deg);
+    }
+
+    0% {
+        transform: rotate(360deg);
+        opacity: .5;
+    }
+
+}
