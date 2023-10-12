@@ -20,7 +20,7 @@
   <div id="navInicio" class="container">
     <div class="opt-mob">
       <span class="imgNavHidden" style="text-align: left">
-        <a href="index.html"><img class="animationlogo" src="assets/images/logo300x300-dark.png" alt="Logotipo um pouco mais escuro e com seu tamanho reduzido"></a></span>
+        <a href="index.html"><img class="animationlogo" src="assets/images/logo300x300-dark.png" width="67" height="67" alt="Logotipo Escuro - Lado Verde"></a></span>
       <div class="aside-items-logo">
         <h1>Lado Verde</h1>
         <span id="spanHidenShow"><noscript>CONSULTORIA AMBIENTAL</noscript></span>
@@ -29,7 +29,7 @@
         <div class="imgListMob">
           <span id="openclose">
             <a onclick="changeIcon('openclose')" class="open" href="#item-this"><img onmouseover="opencloseHover()"
-                   class="listMob" src="assets/images/list.svg" alt="Menu que revala opções de navegação"></a>
+                   class="listMob" src="assets/images/list.svg" width="67" height="67" alt="Menu que revala opções de navegação"></a>
           </span>
           <div class="dv">
             <div class="dv-children-icon">
@@ -69,14 +69,8 @@
     <header class="o-header">
       <div class="bg-home">
         <div class="header-left">
-          <div title="Página Inicial" class="header-logo" id="slider" onclick='window.location.href="index.html"'>
-            <img class="header-logo-site selected" src="assets/images/logo300x300-silver.png"
-                 alt="Logotipo inicial do carrosel de imagens">
-            <img class="header-logo-site" src="assets/images/logo300x300-silver-1.png" alt="Segunda imagem do carrosel">
-            <img class="header-logo-site" src="assets/images/logo300x300-silver-2.png"
-                 alt="Terceira imagem do carrosel">
-            <img class="header-logo-site" src="assets/images/logo300x300-silver-3.png"
-                 alt="Quarta e ultima imagem do carrosel">
+          <div title="Página Inicial" class="header-logo animationlogo" id="slider" onclick='window.location.href="index.html"'>
+            <img class="header-logo-site" src="assets/images/logo300x300-silver.png" alt="Navegar para Página Inicial">
           </div>
         </div>
         <div class="header-rigth">
@@ -122,6 +116,9 @@
         <i class="bi bi-tree-fill"> </i>
         <h2> Serviços</h2>
       </div>
+      <aside class="bt-up">
+        <div title="Subir ao Topo." class="bt-up-items" onclick='window.location.href="index.html#navInicio"'> </div>
+      </aside>
       <section>
         <div class="servicosResumidos residuos" id="navResiduos">
           <div class="span-servicos"><span>Gestão de Resíduos</span></div>
@@ -282,20 +279,20 @@
                   Preencha Todos os Campos
                 </div>
                 <div class="formail">
-                  <input type="text" name="3 Nome" required minlength="3" autocomplete="off" placeholder="Nome"
-                         id="nameContact" class="form-contact-items">
+                  <div id="nomePlace" class="holder"><label for="nameContact">Nome</label></div>
+                  <input type="text" name="3 Nome" required minlength="3" autocomplete="off" placeholder="" id="nameContact" class="form-contact-items">
                 </div>
                 <div class="formail">
-                  <input type="email" name="5 Email" required minlength="5" autocomplete="off" placeholder="Email"
-                         id="emailContact" class="form-contact-items">
+                  <div id="emailPlace" class="holder"><label for="emailContact">Email</label></div>
+                  <input type="email" name="5 Email" required minlength="5" autocomplete="off" placeholder="" id="emailContact" class="form-contact-items">
                 </div>
                 <div class="formail">
-                  <input type="text" name="5 Assunto" required minlength="5" autocomplete="off" placeholder="Assunto"
-                         id="subjectContact" class="form-contact-items">
+                  <div id="assPlace" class="holder"><label for="subjectContact">Assunto</label></div>
+                  <input type="text" name="5 Assunto" required minlength="5" autocomplete="off" placeholder="" id="subjectContact" class="form-contact-items">
                 </div>
                 <div class="formail">
-                  <textarea required minlength="10" name="10 Mensagem" placeholder="Mensagem" id="messageContact"
-                            class="form-contact-items"></textarea>
+                  <div id="msgPlace" class="holder"><label for="messageContact">Menssagem</label></div>
+                  <textarea required minlength="10" name="10 Mensagem" placeholder="" id="messageContact" class="form-contact-items"></textarea>
                 </div>
                 <button class="button" title="Enviar Formulário">
                   Enviar Formulário

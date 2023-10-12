@@ -55,3 +55,15 @@
     }
 
 }
+
+@keyframes rotacao-btn-up {
+
+    20%,
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}

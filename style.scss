@@ -51,6 +51,10 @@ body {
     justify-content: center;
   }
 
+  .holder {
+    margin-left: 14%;
+  }
+
   .o-aside {
     display: none;
   }
@@ -78,6 +82,10 @@ body {
     display: none;
   }
 
+  article {
+    background-image: url(./assets/images/card_555.jpg) !important;
+  }
+
   article .button,
   section .contact-form .button {
     font-size: 10px;
@@ -89,7 +97,7 @@ body {
     font-size: 80%;
   }
 
-  dialog:modal {
+  dialog {
     width: 99%;
   }
 }
@@ -145,6 +153,10 @@ body {
     justify-content: center;
   }
 
+  .holder {
+    margin-left: 13%;
+  }
+
   .o-header,
   .bg-home {
     height: 70px;
@@ -152,11 +164,16 @@ body {
 
   .header-left img {
     width: 70px;
+    height: 70px;
   }
 
   .contactForm {
     flex-direction: column-reverse;
     height: 100%;
+  }
+
+  article {
+    background-image: url(./assets/images/card_879.jpg);
   }
 
   .contact-form,

@@ -74,7 +74,7 @@ aside .aside-items-logo {
   border-radius: 7px;
   margin: 5px;
   transition: all 0.5s ease-in-out;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .servicosResumidos span {
@@ -187,6 +187,35 @@ article {
 #item-this:target {
   opacity: 1;
   overflow: visible;
+}
+
+.bt-up {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 0;
+  top: 87%;
+  z-index: 1;
+  margin: 10px;
+  display: none;
+}
+
+.bt-up .bt-up-items {
+  background-image: url("./assets/images/bt_up_dark.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  opacity: 0.8;
+}
+
+.bt-up .bt-up-items:hover {
+  background-image: url("./assets/images/bt_up_normal.png");
+  opacity: 1;
+  -webkit-animation: rotacao-btn-up 5s infinite;
+          animation: rotacao-btn-up 5s infinite;
 }
 
 .footer {
@@ -482,7 +511,6 @@ dialog {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 14px;
 }
 
 .header-logo-site {
@@ -497,7 +525,6 @@ dialog {
 }
 
 #slider img {
-  opacity: 0;
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
@@ -584,7 +611,7 @@ article {
   border-radius: 0px;
   height: 350px;
   width: 100%;
-  background-image: url("./assets/images/card.jpg");
+  background-image: url("./assets/images/card1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -633,7 +660,7 @@ section article .contactConsultora {
 
 section > article > .contactForm {
   display: flex;
-  background-image: url("./assets/images/handshake-4002834_1280.jpg");
+  background-image: url("./assets/images/contato_compressed.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -652,11 +679,35 @@ section > article > .contactForm {
   padding: 4px;
   margin-bottom: 5px;
   padding: 4px;
+  margin-top: 15px;
 }
 
 .resumidos-txt textarea {
   height: 155px;
   width: 80%;
+  margin-top: 15px;
+}
+
+.holder {
+  width: 37%;
+  text-align: left;
+  margin-left: 7%;
+  margin-top: 10px;
+  font-size: 74.9%;
+  position: absolute;
+  padding-top: 18px;
+  font-weight: 600;
+  color: #fefbff;
+}
+
+#nomePlace,
+#emailPlace,
+#assPlace {
+  height: 40px;
+}
+
+#msgPlace {
+  height: 155px;
 }
 
 .info-items {
@@ -684,8 +735,8 @@ section .contact-form input,
 section .contact-form textarea {
   background-color: #011d07;
   color: #9ffaa3;
-  font-size: 0.9rem;
-  opacity: 0.8;
+  font-size: 1rem;
+  opacity: 0.6;
   border: 0;
   resize: none;
   border-radius: 8px;
@@ -698,14 +749,14 @@ section .contact-form textarea {
 }
 
 section .contact-form textarea {
-  font-size: 1rem;
+  font-size: 17px;
   margin-bottom: 5px;
 }
 
 section .contact-form input:focus,
 section .contact-form textarea:focus {
   border-left: 10px solid gold;
-  background-color: #06121e;
+  opacity: 1;
 }
 
 article .button {
@@ -880,6 +931,22 @@ article > .info-items > .resumidos-txt p {
     opacity: 0.5;
   }
 }
+@-webkit-keyframes rotacao-btn-up {
+  20%, 50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rotacao-btn-up {
+  20%, 50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 .container {
   display: grid;
   width: 100%;
@@ -898,6 +965,9 @@ article > .info-items > .resumidos-txt p {
   section {
     transition: 4s ease-in-out;
     justify-content: center;
+  }
+  .holder {
+    margin-left: 14%;
   }
   .o-aside {
     display: none;
@@ -919,6 +989,9 @@ article > .info-items > .resumidos-txt p {
   .header-rigth,
 .header-left {
     display: none;
+  }
+  article {
+    background-image: url(./assets/images/card_555.jpg) !important;
   }
   article .button,
 section .contact-form .button {
@@ -972,16 +1045,23 @@ section .contact-form .button {
   section {
     justify-content: center;
   }
+  .holder {
+    margin-left: 13%;
+  }
   .o-header,
 .bg-home {
     height: 70px;
   }
   .header-left img {
     width: 70px;
+    height: 70px;
   }
   .contactForm {
     flex-direction: column-reverse;
     height: 100%;
+  }
+  article {
+    background-image: url(./assets/images/card_879.jpg);
   }
   .contact-form,
 section article .contactConsultora,

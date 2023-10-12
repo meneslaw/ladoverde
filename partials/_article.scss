@@ -3,7 +3,7 @@ article {
     border-radius: 0px;
     height: 350px;
     width: 100%;
-    background-image: url("./assets/images/card.jpg");
+    background-image: url("./assets/images/card1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -53,7 +53,7 @@ section article .contactConsultora {
 
 section>article>.contactForm {
     display: flex;
-    background-image: url("./assets/images/handshake-4002834_1280.jpg");
+    background-image: url("./assets/images/contato_compressed.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -72,11 +72,36 @@ section>article>.contactForm {
     padding: 4px;
     margin-bottom: 5px;
     padding: 4px;
+    margin-top: 15px;
+
 }
 
 .resumidos-txt textarea {
     height: 155px;
     width: 80%;
+    margin-top: 15px;
+}
+
+.holder {
+    width: 37%;
+    text-align: left;
+    margin-left: 7%;
+    margin-top: 10px;
+    font-size: 74.9%;
+    position: absolute;
+    padding-top: 18px;
+    font-weight: 600;
+    color: $white-light;
+}
+
+#nomePlace,
+#emailPlace,
+#assPlace {
+    height: 40px;
+}
+
+#msgPlace {
+    height: 155px;
 }
 
 .info-items {
@@ -104,8 +129,8 @@ section .contact-form input,
 section .contact-form textarea {
     background-color: $green-dark;
     color: $green-light;
-    font-size: .9rem;
-    opacity: .8;
+    font-size: 1rem;
+    opacity: .6;
     border: 0;
     resize: none;
     border-radius: 8px;
@@ -118,14 +143,15 @@ section .contact-form textarea {
 }
 
 section .contact-form textarea {
-    font-size: 1rem;
+    font-size: 17px;
     margin-bottom: 5px;
 }
 
 section .contact-form input:focus,
 section .contact-form textarea:focus {
     border-left: 10px solid gold;
-    background-color: $primary-normal;
+
+    opacity: 1;
 }
 
 article .button {

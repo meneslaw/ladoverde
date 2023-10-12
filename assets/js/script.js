@@ -1,22 +1,3 @@
-function openServices() {
-    const item = document.querySelectorAll('.servicosResumidos');
-    var dlay = 500;
-    for (var i = 0; i < item.length; i++) {
-        const res = item[i];
-        if (res.style.opacity == "") {
-            const a = document.querySelectorAll('.servicosResumidos')[i].classList[1];
-            var go = item[i];
-            const b = document.querySelector('.' + a);
-            //b.style.opacity = "1";
-
-            //go.style.opacity = "1"
-            setTimeout(() => { b.style.opacity = 1; }, i * dlay);
-
-
-        }
-        dlay += 10;
-    }
-}
 let interval = 20000;
 function escreve(arg, argSeletor) {
     var palavraNew = arg;
@@ -44,36 +25,7 @@ function chamaMaquina() {
 }
 window.addEventListener("load", escreve("CONSULTORIA AMBIENTAL", "digitaServicos"));
 window.addEventListener("load", escreve("CONSULTORIA AMBIENTAL", "spanHidenShow"));
-window.addEventListener("load", openServices);
 
-let time = 5000,
-    currentImageIndex = 0,
-    images = document
-        .querySelectorAll("#slider img")
-max = images.length;
-
-function nextImage() {
-
-    images[currentImageIndex]
-        .classList.remove("selected")
-
-    currentImageIndex++
-
-    if (currentImageIndex >= max)
-        currentImageIndex = 0
-
-    images[currentImageIndex]
-        .classList.add("selected")
-}
-
-function start() {
-    setInterval(() => {
-        // troca de image
-        nextImage()
-    }, time)
-}
-
-window.addEventListener("load", start)
 const pixels = document.querySelector('#emailContact').style.borderLeftWidth = "10px"
 const solid = document.querySelector('#emailContact').style.borderLeftStyle = "solid"
 function focusOutForm(str, num) {
@@ -107,7 +59,10 @@ function emailFormRegex() {
     }
     else {
         document.querySelector('#emailContact').style.borderLeftColor = "Tomato";
-        existP.innerHTML = '<div class="divErrorItems"><i class="bi bi-arrow-right-circle-fill"></i>Formato do Email é inválido.</div>';
+        if (emailDigitado.length >= 1) {
+            existP.innerHTML = '<div class="divErrorItems"><i class="bi bi-arrow-right-circle-fill"></i>Formato do Email é inválido.</div>';
+        }
+
 
         //(!existP) ? criaPregex : console.log("já existe");
     }
@@ -115,13 +70,23 @@ function emailFormRegex() {
 var form = document.getElementById('formItems');
 form.addEventListener('focusout', (event) => {
     const targetFormail = event.target;
+    if (targetFormail.value.length == "" || targetFormail.value.length < 1) {
+        var placeRemoveStyle = targetFormail.parentElement.children[0];
+        placeRemoveStyle.style.marginTop = "";
+    }
+
     var numberMin = targetFormail.name.split(" ");
     focusOutForm(targetFormail.id, numberMin[0]);
-    console.log(targetFormail.id);
+
     (targetFormail.id == "emailContact") ? emailFormRegex('emailContact') : false
 }, true);
 form.addEventListener('focus', (event) => {
     event.target.style.borderLeftColor = "gold";
+    var targetFormPlace = event.target;
+
+    var eventRess = targetFormPlace.parentElement.children[0];
+    eventRess.style.transition = "1s";
+    eventRess.style.marginTop = "-20px";
 }, true);
 
 form.addEventListener('blur', (event) => {
@@ -179,22 +144,22 @@ form.addEventListener('submit', (event) => {
 }, true);
 function cookieSet(n, v) {
     const bolachas = document.cookie.indexOf(n + "=" + v);
-    (bolachas == -1) ? document.cookie = n + "=" + v : console.log("não inclua")
-    console.log(bolachas)
+    (bolachas == -1) ? document.cookie = n + "=" + v : console.log(" ")
+
 }
 function sheet(url, nome) {
 
     fetch(url)
         .then((response) => response.json())
         .then((data) => {
-            console.log(data)
+
             document.getElementById("prospect").innerText = nome;
             cookieSet("nome", nome);
             document.getElementById('formItems').style.display = 'none';
             document.querySelector(".resultForm").style.display = 'flex';
             var getClear = document.getElementsByClassName("form-contact-items");
             for (let clear = 0; clear < getClear.length; clear++) {
-                console.log(getClear[clear].value = '')
+                getClear[clear].value = '';
             }
         })
         .catch(function (error) {

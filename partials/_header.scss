@@ -163,7 +163,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 14px;
 }
 
 .header-logo-site {
@@ -179,7 +178,6 @@
 }
 
 #slider img {
-  opacity: 0;
   position: absolute;
   object-fit: cover;
   transition: opacity 4s ease-in-out;

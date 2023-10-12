@@ -8,7 +8,7 @@ function lerTxt(subTitle) {
                 var res = resposta[i];
                 if (res.serviceName == subTitle) {
                     const info = document.querySelector(".modalInfo");
-                    console.log(subTitle, info.innerHTML = res.infoService)
+                    info.innerHTML = res.infoService;
 
                 }
             }
@@ -26,7 +26,7 @@ modalHref.addEventListener('click', (event) => {
         lerTxt(event.target.textContent);
         animationModal.className = "animationModal";
     } else {
-        console.log("clicou em qualquer lugar")
+        //console.log("clicou em qualquer lugar")
     }
 
 
@@ -38,11 +38,11 @@ function xHide() {
 
     window.addEventListener('animationend', (event) => {
         if (document.getElementById("modalDialog").className == "animationModalClose") {
-            console.log("close");
+            //console.log("close");
             document.getElementsByClassName("button-close")[0].click();
         }
         //document.getElementsByClassName("button-close")[0].click();
-        console.log(event)
+        //console.log(event)
         //document.getElementById("modalDialog").className = "animationModal";
     }, true);
 }
@@ -60,6 +60,7 @@ let CreateDOMObjects = () => {
 
 let ImportScriptFile = () => {
     let script = document.createElement('script');
+    script.setAttribute("defer", "");
     script.src = 'https://vlibras.gov.br/app/vlibras-plugin.js';
     script.onload = () => {
         new window.VLibras.Widget('https://vlibras.gov.br/app');
@@ -73,3 +74,18 @@ let ImportScriptFile = () => {
         ImportScriptFile();
     });
 })();
+const blockBtUp = document.querySelector(".bt-up");
+
+window.addEventListener("load", () => {
+    if (document.documentElement.scrollTop >= 200) {
+        blockBtUp.style.display = 'block';
+    }
+});
+window.addEventListener('scroll', () => {
+    if (document.documentElement.scrollTop >= 200) {
+        blockBtUp.style.display = 'block';
+    } else {
+        blockBtUp.style.display = 'none';
+    }
+
+});
