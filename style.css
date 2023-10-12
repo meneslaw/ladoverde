@@ -906,15 +906,15 @@ article > .info-items > .resumidos-txt p {
   }
 }
 .animationlogo {
-  -webkit-animation: rotacao 8s infinite alternate;
-          animation: rotacao 8s infinite alternate;
+  -webkit-animation: rotacao 8.5s infinite alternate;
+          animation: rotacao 8.5s infinite alternate;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
 }
 
 @-webkit-keyframes rotacao {
   20%, 100% {
-    transform: rotate(-860deg);
+    transform: rotate(-720deg);
   }
   0% {
     transform: rotate(360deg);
@@ -924,7 +924,7 @@ article > .info-items > .resumidos-txt p {
 
 @keyframes rotacao {
   20%, 100% {
-    transform: rotate(-860deg);
+    transform: rotate(-720deg);
   }
   0% {
     transform: rotate(360deg);
