@@ -908,8 +908,8 @@ article > .info-items > .resumidos-txt p {
 .animationlogo {
   -webkit-animation: rotacao 8.5s infinite alternate;
           animation: rotacao 8.5s infinite alternate;
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
 }
 
 @-webkit-keyframes rotacao {
@@ -1028,7 +1028,7 @@ section .contact-form .button {
     font-size: 10px;
   }
   .opt-mob img {
-    width: 70px;
+    width: 67px;
   }
   #item-this {
     height: 60px;
