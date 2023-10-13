@@ -516,7 +516,7 @@ dialog {
 .imgNavHidden {
   width: 67px;
   height: 67px;
-  background-image: url("/assets/images/logo-dark_67x67.png");
+  background-image: url("./assets/images/logo-dark_67x67.png");
   cursor: pointer;
 }
 
