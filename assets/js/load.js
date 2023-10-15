@@ -26,7 +26,7 @@ modalHref.addEventListener('click', (event) => {
         lerTxt(event.target.textContent);
         animationModal.className = "animationModal";
     } else {
-        //console.log("clicou em qualquer lugar")
+        //console.log(event.target.classList)
     }
 
 
@@ -46,6 +46,7 @@ function xHide() {
         //document.getElementById("modalDialog").className = "animationModal";
     }, true);
 }
+
 let CreateDOMObjects = () => {
     const DOM = `
         <div vw class="enabled">
@@ -60,7 +61,7 @@ let CreateDOMObjects = () => {
 
 let ImportScriptFile = () => {
     let script = document.createElement('script');
-    script.setAttribute("defer", "");
+    //script.setAttribute("defer", "");
     script.src = 'https://vlibras.gov.br/app/vlibras-plugin.js';
     script.onload = () => {
         new window.VLibras.Widget('https://vlibras.gov.br/app');
@@ -70,20 +71,21 @@ let ImportScriptFile = () => {
 
 (() => {
     window.addEventListener('DOMContentLoaded', e => {
-        CreateDOMObjects();
         ImportScriptFile();
+        CreateDOMObjects();
     });
 })();
+
 const blockBtUp = document.querySelector(".bt-up");
 
 window.addEventListener("load", () => {
     if (document.documentElement.scrollTop >= 200) {
-        blockBtUp.style.display = 'block';
+        blockBtUp.style.display = 'flex';
     }
 });
 window.addEventListener('scroll', () => {
     if (document.documentElement.scrollTop >= 200) {
-        blockBtUp.style.display = 'block';
+        blockBtUp.style.display = 'flex';
     } else {
         blockBtUp.style.display = 'none';
     }

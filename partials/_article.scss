@@ -3,7 +3,7 @@ article {
     border-radius: 0px;
     height: 350px;
     width: 100%;
-    background-image: url("./assets/images/card1.jpg");
+    background-image: url("./assets/images/card1_1280.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -114,7 +114,7 @@ section>article>.contactForm {
     min-height: 350px;
     padding: 0;
     margin: 0;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 section .contact-form button {
@@ -155,12 +155,12 @@ section .contact-form textarea:focus {
 }
 
 article .button {
-    padding: 14px;
+    padding: 10px;
     border: 1px solid $white-normal;
-    font-size: 15px;
+    font-size: 10px;
     border-radius: 15px;
     background-color: $green-dark;
-    transition: .8s ease-in;
+    transition: all .5s ease-in-out;
 }
 
 article .button:hover {

@@ -191,3 +191,11 @@ function changeIcon(id, type) {
 function opencloseHover() {
     document.querySelector(".listMob").click();
 }
+const aboutStatus = document.getElementsByClassName("aboutTitle")[0];
+const secStatus = document.getElementById("navSobre");
+function about() {
+    if (secStatus.style.display != "flex") {
+        aboutStatus.style.display = "flex"
+        secStatus.style.display = "flex"
+    }
+}
