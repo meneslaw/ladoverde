@@ -193,9 +193,14 @@ function opencloseHover() {
 }
 const aboutStatus = document.getElementsByClassName("aboutTitle")[0];
 const secStatus = document.getElementById("navSobre");
-function about() {
+function about(numLink) {
     if (secStatus.style.display != "flex") {
         aboutStatus.style.display = "flex"
         secStatus.style.display = "flex"
+        if (numLink) {
+            const criaLink = document.createElement("a");
+            criaLink.setAttribute("href", numLink);
+            criaLink.click();
+        }
     }
 }
