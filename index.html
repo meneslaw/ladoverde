@@ -17,7 +17,7 @@
 <body>
   <div id="navInicio" class="container">
     <div class="opt-mob">
-      <span onclick='window.location.href="index.html"' title="Página Inicial" class="imgNavHidden animationlogo" style="text-align: left" alt="Logotipo Escuro - Lado Verde"> </span>
+      <span onclick='window.location.href="index.html"' title="Página Inicial" class="imgNavHidden animationlogo" style="text-align: left"> </span>
       <div class="aside-items-logo">
         <h1>Lado Verde</h1>
         <span id="spanHidenShow"><noscript>CONSULTORIA AMBIENTAL</noscript></span>
@@ -92,11 +92,11 @@
           </div>
         </div>
       </aside>
-      <article>
+      <article class="art-info-items">
         <div class="servicosResumidos info-items">
           <div class="span-servicos">
             <div style="width: 100%;">
-              <h2 style="font-size: 1.3rem;margin-block-start: 23px;">DEIXE TUDO COM A NOSSA EQUIPE!</h2>
+              <h2 style="font-size: 1.3rem;">DEIXE TUDO COM A NOSSA EQUIPE!</h2>
             </div>
           </div>
           <div class="resumidos-txt">
@@ -338,20 +338,20 @@
           </div>
         </div>
         <div class="sobre-missao-visao">
-          <div class="sobre-missao">
+          <div id="navMissao" class="sobre-missao">
             <h4 class="important">Missão</h4>
             <p>Ser uma força motriz na promoção da sustentabilidade empresarial.</p>
             <p>A empresa está empenhada em facilitar uma gestão ambiental responsável, assegurando que os impactos ambientais sejam minimizados e que a preservação do meio ambiente seja prioridade.</p>
             <p>A Lado Verde busca incessantemente soluções inovadoras e eficazes para seus clientes, apoiando o crescimento sustentável e contribuindo para a construção de um mundo mais equilibrado.</p>
           </div>
-          <div class="sobre-visao">
+          <div id="navVisao" class="sobre-visao">
             <h4 class="important">Visão</h4>
             <p>Nossa visão na Lado Verde é liderar a indústria de consultoria ambiental, impulsionando a inovação e a sustentabilidade.</p>
             <p>Buscamos ser reconhecidos como parceiros estratégicos essenciais para nossos clientes, promovendo uma gestão responsável dos recursos naturais e um mundo mais limpo e saudável.</p>
             <p>Almejamos expandir nossa influência em todo Território Nacional, tornando-nos a referência incontestável em soluções ambientais e promovendo um futuro mais sustentável para todos.</p>
           </div>
         </div>
-        <div class="sobre-valores">
+        <div id="navValores" class="sobre-valores">
           <h4 class="important">Valores</h4>
           <p>
             <span class="valores-items">Compromisso com a Sustentabilidade:</span> Estamos firmemente comprometidos em proteger o meio ambiente e promover a sustentabilidade em todas as nossas atividades. Acreditamos que o sucesso empresarial deve estar alinhado com a preservação do planeta.
@@ -364,8 +364,8 @@
       </section>
     </main>
     <footer class="o-footer">
-      <p><b class="important"><a href="#navInicio">Lado Verde</a></b>| Consultoria Ambiental | 2023</p>
-      <p>Missão | Valores | Visão</p>
+      <p><b class="important"><a title="Ir para Página Inicial" href="index.html">Lado Verde</a></b>| Consultoria Ambiental | 2023</p>
+      <p alt="Saiba mais Sobre a Lado Verde" title="Saiba mais Sobre a Lado Verde" class="footer-links" onclick="about('#navSobre')"><b class="important">Missão</b> | <b class="important">Valores</b> | <b class="important">Visão</b></p>
       <span>
         <a href="https://www.w3.org/html/logo/" target="_blank">
           <img src="assets/images/w3c_html5.avif" width="88" height="31" alt="HTML5 Powered with Semantics" title="HTML5 Powered with Semantics">
