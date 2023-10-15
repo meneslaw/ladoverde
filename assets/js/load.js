@@ -73,6 +73,9 @@ let ImportScriptFile = () => {
     window.addEventListener('DOMContentLoaded', e => {
         ImportScriptFile();
         CreateDOMObjects();
+        var urlCSS = "http://jigsaw.w3.org/css-validator/validator?lang=pt-BR&profile=css3svg&uri="
+        var myUrlNow = "http://" + window.location.host + "/index.html";
+        document.getElementById("cssValido").setAttribute("href", urlCSS + myUrlNow)
     });
 })();
 
