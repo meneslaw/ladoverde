@@ -74,7 +74,7 @@ let ImportScriptFile = () => {
         ImportScriptFile();
         CreateDOMObjects();
         var urlCSS = "http://jigsaw.w3.org/css-validator/validator?lang=pt-BR&profile=css3svg&uri="
-        var myUrlNow = "http://" + window.location.host + "/index.html";
+        var myUrlNow = window.location.href;
         console.log(urlCSS + myUrlNow);
         document.getElementById("cssValido").setAttribute("href", urlCSS + myUrlNow)
     });
