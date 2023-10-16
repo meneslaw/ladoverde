@@ -298,14 +298,14 @@
                   <div id="msgPlace" class="holder"><label for="messageContact">Menssagem</label></div>
                   <textarea required minlength="10" name="10 Mensagem" placeholder="" id="messageContact" class="form-contact-items"></textarea>
                 </div>
-                <button class="button" title="Enviar Formulário">
+                <button class="button" title="Enviar Formulário" id="nID">
                   Enviar Formulário
                 </button>
               </form>
               <br>
             </div>
             <div class="contactConsultora">
-              <img src="assets/images/debora_valias.avif" alt="Membro da equipe de consultoria">
+              <img loading="lazy" src="assets/images/debora_valias.avif" alt="Membro da equipe de consultoria">
               <h2>Olá!</h2>
               <h3 id="clientForm">&#160;</h3>
               <p>
@@ -368,10 +368,10 @@
       <p title="Saiba mais Sobre a Lado Verde" class="footer-links" onclick="about('#navSobre')"><b class="important">Missão</b> | <b class="important">Valores</b> | <b class="important">Visão</b></p>
       <span>
         <a href="http://validator.w3.org/check/referer" target="_blank" id="htmlValido">
-          <img src="assets/images/w3c_html5.avif" width="88" height="31" alt="Logo W3C - Validação da página elaborada semanticamente em HTML5" title="HTML5 válido!">
+          <img loading="lazy" src="assets/images/w3c_html5.avif" width="88" height="31" alt="Logo W3C - Validação da página elaborada semanticamente em HTML5" title="HTML5 válido!">
         </a>
         <a href="https://jigsaw.w3.org/css-validator/" target="_blank" id="cssValido">
-          <img src="assets/images/w3c_css.png" alt="Logo W3C - CSS válido!" title="CSS válido!" width="88" height="31">
+          <img loading="lazy" src="assets/images/w3c_css.png" alt="Logo W3C - CSS válido!" title="CSS válido!" width="88" height="31">
         </a>
       </span>
     </footer>
@@ -379,7 +379,7 @@
   <aside class="bt-up">
     <div title="Subir ao Topo." class="bt-up-items" onclick='window.location.href="index.html#navInicio"'> </div>
   </aside>
-  <script src="assets/js/script.js"></script>
+  <script src="assets/js/script.js" async></script>
   <script src="assets/js/load.js"></script>
   <div class="modale">
     <dialog id="modalDialog">
