@@ -1,0 +1,17 @@
+{
+    "name": "Lado Verde - Consultoria Ambiental",
+    "short_name": "Lado Verde",
+    "start_url": "index.html",
+    "lang": "pt-br",
+    "theme_color": "#06121e",
+    "display": "standalone",
+    "background_color": "#06121e",
+    "description": "A Lado Verde desempenha atividades de consultoria e assessoria ambiental.",
+    "icons": [
+        {
+            "src": "assets/images/bt_up_dark.png",
+            "sizes": "250x250",
+            "type": "image/png"
+        }
+    ]
+}
