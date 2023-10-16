@@ -83,7 +83,7 @@ body {
   }
 
   article {
-    background-image: url("./assets/images/card_879.jpg") !important;
+    background-image: url("./assets/images/card-555-1.webp") !important;
   }
 
   article .button,
@@ -151,6 +151,10 @@ body {
 @media screen and (max-width: 879px) {
   section {
     justify-content: center;
+  }
+
+  article {
+    background-image: url("./assets/images/card_879.webp");
   }
 
   .holder {
