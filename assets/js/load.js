@@ -73,10 +73,12 @@ let ImportScriptFile = () => {
     window.addEventListener('DOMContentLoaded', e => {
         ImportScriptFile();
         CreateDOMObjects();
-        var urlCSS = "http://jigsaw.w3.org/css-validator/validator?lang=pt-BR&profile=css3svg&uri="
+        var urlCSS = "http://jigsaw.w3.org/css-validator/validator?lang=pt-BR&profile=css3svg&uri=";
+        var urlHtml = "https://validator.w3.org/check?uri=http%3A%2F%2F";
         var myUrlNow = window.location.host + window.location.pathname;
-        console.log(urlCSS + myUrlNow);
-        document.getElementById("cssValido").setAttribute("href", urlCSS + myUrlNow)
+        console.log(urlHtml + myUrlNow);
+        document.getElementById("cssValido").setAttribute("href", urlCSS + myUrlNow);
+        document.getElementById("htmlValido").setAttribute("href", urlHtml + myUrlNow);
     });
 })();
 
