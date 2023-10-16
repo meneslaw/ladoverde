@@ -47,7 +47,7 @@ body {
 
 @media screen and (max-width: 550px) {
   section {
-    transition: 4s ease-in-out;
+
     justify-content: center;
   }
 
@@ -83,7 +83,7 @@ body {
   }
 
   article {
-    background-image: url(./assets/images/card_555.jpg) !important;
+    background-image: url("./assets/images/card_879.jpg") !important;
   }
 
   article .button,
@@ -131,7 +131,7 @@ body {
   }
 
   .opt-mob img {
-    width: 70px;
+    width: 67px;
   }
 
   #item-this {
@@ -172,10 +172,6 @@ body {
     height: 100%;
   }
 
-  article {
-    background-image: url(./assets/images/card_879.jpg);
-  }
-
   .contact-form,
   section article .contactConsultora,
   body>div>main>section>article>div>div.resumidos-txt {
@@ -191,6 +187,25 @@ body {
       "footer";
     grid-template-rows: 70px 1fr 145px;
     grid-template-columns: auto;
+  }
+
+  .sobre-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobre-fir img {
+    width: 25%;
+  }
+
+  .sobre-missao-visao {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobre-missao,
+  .sobre-visao {
+    width: 99%;
   }
 }
 

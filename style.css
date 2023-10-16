@@ -39,8 +39,7 @@ aside .aside-items-logo {
 .aside span,
 .opt-mob > .aside-items-logo span {
   color: #9ffaa3;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 11.5px;
   border-left: 10px solid #9ffaa3;
   padding-left: 10px;
   position: absolute;
@@ -53,14 +52,16 @@ aside .aside-items-logo {
 .aside {
   display: flex;
   width: 100%;
-  height: 115px;
+  height: 75px;
   margin-left: 20px;
 }
 
 .aside > .aside-items-logo h2 {
-  font-family: "Dancing Script";
-  font-size: 80px;
+  font-size: 2.3rem;
   color: rgb(92, 226, 92);
+  -webkit-margin-start: -3px;
+          margin-inline-start: -3px;
+  font-family: cursive;
 }
 
 .servicosResumidos {
@@ -136,15 +137,6 @@ aside .aside-items-logo {
   color: #9ffaa3;
   text-transform: uppercase;
   font-size: 0.88rem;
-}
-
-.contents {
-  position: relative;
-  max-width: 1440px;
-  min-height: 100vh;
-  margin: 0 auto;
-  padding: 0 60px;
-  border: 19px solid rgb(110, 0, 0);
 }
 
 a {
@@ -489,7 +481,7 @@ dialog {
   display: block;
   position: absolute;
   background-position: bottom;
-  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("./assets/images/meioambiente.jpg");
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("./assets/images/meioambiente.webp");
   left: 0;
   top: 0;
   width: 100%;
@@ -954,6 +946,10 @@ article > .info-items > .resumidos-txt p {
     transform: rotate(-360deg);
   }
 }
+* {
+  will-change: transform;
+}
+
 .container {
   display: grid;
   width: 100%;
@@ -998,7 +994,7 @@ article > .info-items > .resumidos-txt p {
     display: none;
   }
   article {
-    background-image: url(./assets/images/card_555.jpg) !important;
+    background-image: url("./assets/images/card_555.jpg") !important;
   }
   article .button,
 section .contact-form .button {
@@ -1068,7 +1064,7 @@ section .contact-form .button {
     height: 100%;
   }
   article {
-    background-image: url(./assets/images/card_879.jpg);
+    background-image: url("./assets/images/card_879.webp");
   }
   .contact-form,
 section article .contactConsultora,
