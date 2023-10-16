@@ -3,7 +3,6 @@ function lerTxt(subTitle) {
         .then((response) => response.json())
         .then((data) => {
             const resposta = data['Services'];
-            //console.log(resposta)
             for (var i = 0; i < resposta.length; i++) {
                 var res = resposta[i];
                 if (res.serviceName == subTitle) {
@@ -25,11 +24,7 @@ modalHref.addEventListener('click', (event) => {
         modalDialogTitle.innerHTML = event.target.textContent;
         lerTxt(event.target.textContent);
         animationModal.className = "animationModal";
-    } else {
-        //console.log(event.target.classList)
     }
-
-
 }, true);
 function xHide() {
     document.getElementById("modalDialog").className = "animationModalClose";
@@ -38,12 +33,8 @@ function xHide() {
 
     window.addEventListener('animationend', (event) => {
         if (document.getElementById("modalDialog").className == "animationModalClose") {
-            //console.log("close");
             document.getElementsByClassName("button-close")[0].click();
         }
-        //document.getElementsByClassName("button-close")[0].click();
-        //console.log(event)
-        //document.getElementById("modalDialog").className = "animationModal";
     }, true);
 }
 
@@ -76,7 +67,6 @@ let ImportScriptFile = () => {
         var urlCSS = "http://jigsaw.w3.org/css-validator/validator?lang=pt-BR&profile=css3svg&uri=";
         var urlHtml = "https://validator.w3.org/check?uri=http%3A%2F%2F";
         var myUrlNow = window.location.host + window.location.pathname;
-        console.log(urlHtml + myUrlNow);
         document.getElementById("cssValido").setAttribute("href", urlCSS + myUrlNow);
         document.getElementById("htmlValido").setAttribute("href", urlHtml + myUrlNow);
     });

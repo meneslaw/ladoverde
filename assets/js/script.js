@@ -11,9 +11,6 @@ function escreve(arg, argSeletor) {
     document.getElementById(seletor).innerHTML = '';
 
     setTimeout(() => { escreve(palavraNew, seletor) }, 1 * interval);
-
-
-
 }
 
 function chamaMaquina() {
@@ -29,7 +26,6 @@ window.addEventListener("load", escreve("CONSULTORIA AMBIENTAL", "spanHidenShow"
 const pixels = document.querySelector('#emailContact').style.borderLeftWidth = "10px"
 const solid = document.querySelector('#emailContact').style.borderLeftStyle = "solid"
 function focusOutForm(str, num) {
-    //document.querySelector('#'+str).style.borderLeft = "";
     var strForm = document.getElementById(str).value;
     var numForm = num;
     if (strForm.length >= numForm) {
@@ -42,8 +38,6 @@ function focusOutForm(str, num) {
         solid;
         document.querySelector('#' + str).style.borderColor = "Tomato";
     }
-
-    //console.log(document.getElementById("clientForm"))
 }
 function emailFormRegex() {
     const existP = document.querySelector(".email");
@@ -62,9 +56,6 @@ function emailFormRegex() {
         if (emailDigitado.length >= 1) {
             existP.innerHTML = '<div class="divErrorItems"><i class="bi bi-arrow-right-circle-fill"></i>Formato do Email é inválido.</div>';
         }
-
-
-        //(!existP) ? criaPregex : console.log("já existe");
     }
 }
 var form = document.getElementById('formItems');
@@ -74,9 +65,11 @@ form.addEventListener('focusout', (event) => {
         var placeRemoveStyle = targetFormail.parentElement.children[0];
         placeRemoveStyle.style.marginTop = "";
     }
+    if (targetFormail.id != "nID") {
+        var numberMin = targetFormail.name.split(" ");
+        focusOutForm(targetFormail.id, numberMin[0]);
+    }
 
-    var numberMin = targetFormail.name.split(" ");
-    focusOutForm(targetFormail.id, numberMin[0]);
 
     (targetFormail.id == "emailContact") ? emailFormRegex('emailContact') : false
 }, true);
